@@ -7,8 +7,8 @@
 + gpio_noesd[11] gpio_noesd[12] gpio_noesd[13] gpio_noesd[14] gpio_noesd[15] gpio_noesd[16]
 + gpio_noesd[17] gpio_noesd[1] gpio_noesd[2] gpio_noesd[3] gpio_noesd[4] gpio_noesd[5]
 + gpio_noesd[6] gpio_noesd[7] gpio_noesd[8] gpio_noesd[9] io_analog[0] io_analog[10]
-+ io_analog[1] io_analog[2] io_analog[3] io_analog[7] io_analog[8] io_analog[9] io_analog[4]
-+ io_analog[5] io_analog[6] io_clamp_high[0] io_clamp_high[1] io_clamp_high[2] io_clamp_low[0]
++ io_analog[1] io_analog[2] io_analog[3] io_analog[4] io_analog[5] io_analog[6] io_analog[7]
++ io_analog[8] io_analog[9] io_clamp_high[0] io_clamp_high[1] io_clamp_high[2] io_clamp_low[0]
 + io_clamp_low[1] io_clamp_low[2] io_in[0] io_in[10] io_in[11] io_in[12] io_in[13]
 + io_in[14] io_in[15] io_in[16] io_in[17] io_in[18] io_in[19] io_in[1] io_in[20] io_in[21]
 + io_in[22] io_in[23] io_in[24] io_in[25] io_in[26] io_in[2] io_in[3] io_in[4] io_in[5]
@@ -106,136 +106,90 @@
 + wbs_dat_o[30] wbs_dat_o[31] wbs_dat_o[3] wbs_dat_o[4] wbs_dat_o[5] wbs_dat_o[6]
 + wbs_dat_o[7] wbs_dat_o[8] wbs_dat_o[9] wbs_sel_i[0] wbs_sel_i[1] wbs_sel_i[2] wbs_sel_i[3]
 + wbs_stb_i wbs_we_i
-X0 ro_complete_0/cbank_0/v ro_complete_0/ro_var_extend_0/w_n120_n750# ro_complete_0/ro_var_extend_0/w_n120_n750# sky130_fd_pr__cap_var_lvt pd=0u ps=0u ad=0p as=0p w=1e+06u l=180000u
-X1 ro_complete_0/cbank_2/v ro_complete_0/ro_var_extend_0/w_n120_n750# ro_complete_0/ro_var_extend_0/w_n120_n750# sky130_fd_pr__cap_var_lvt pd=0u ps=0u ad=0p as=0p w=1e+06u l=180000u
-X2 ro_complete_0/cbank_1/v ro_complete_0/cbank_0/v ro_complete_0/ro_var_extend_0/vdd ro_complete_0/ro_var_extend_0/vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=300000u
-X3 ro_complete_0/cbank_2/v ro_complete_0/cbank_1/v ro_complete_0/ro_var_extend_0/vdd ro_complete_0/ro_var_extend_0/vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=300000u
-X4 ro_complete_0/cbank_0/v ro_complete_0/cbank_2/v ro_complete_0/ro_var_extend_0/vdd ro_complete_0/ro_var_extend_0/vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=300000u
-X5 ro_complete_0/cbank_1/v ro_complete_0/ro_var_extend_0/w_n120_n750# ro_complete_0/ro_var_extend_0/w_n120_n750# sky130_fd_pr__cap_var_lvt pd=0u ps=0u ad=0p as=0p w=1e+06u l=180000u
-X6 ro_complete_0/cbank_1/v ro_complete_0/cbank_0/v gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=300000u
-X7 ro_complete_0/cbank_0/v ro_complete_0/cbank_2/v gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=300000u
-X8 ro_complete_0/cbank_2/v ro_complete_0/cbank_1/v gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=300000u
-X9 gnd ro_complete_0/a0 ro_complete_0/cbank_0/switch_0/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
-X10 gnd ro_complete_0/a1 ro_complete_0/cbank_0/switch_1/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
-X11 gnd ro_complete_0/a3 ro_complete_0/cbank_0/switch_3/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
-X12 gnd ro_complete_0/a2 ro_complete_0/cbank_0/switch_2/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
-X13 gnd ro_complete_0/a4 ro_complete_0/cbank_0/switch_4/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
-X14 gnd ro_complete_0/a5 ro_complete_0/cbank_0/switch_5/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
-X15 ro_complete_0/cbank_0/v ro_complete_0/cbank_0/switch_3/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
-X16 ro_complete_0/cbank_0/v gnd sky130_fd_pr__cap_mim_m3_1 l=5e+06u w=5.2e+06u
-X17 ro_complete_0/cbank_0/v ro_complete_0/cbank_0/switch_5/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
-X18 ro_complete_0/cbank_0/v ro_complete_0/cbank_0/switch_4/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
-X19 ro_complete_0/cbank_0/v ro_complete_0/cbank_0/switch_0/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
-X20 ro_complete_0/cbank_0/v ro_complete_0/cbank_0/switch_1/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
-X21 ro_complete_0/cbank_0/v ro_complete_0/cbank_0/switch_2/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
-X22 gnd ro_complete_0/a0 ro_complete_0/cbank_1/switch_0/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
-X23 gnd ro_complete_0/a1 ro_complete_0/cbank_1/switch_1/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
-X24 gnd ro_complete_0/a3 ro_complete_0/cbank_1/switch_3/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
-X25 gnd ro_complete_0/a2 ro_complete_0/cbank_1/switch_2/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
-X26 gnd ro_complete_0/a4 ro_complete_0/cbank_1/switch_4/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
-X27 gnd ro_complete_0/a5 ro_complete_0/cbank_1/switch_5/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
-X28 ro_complete_0/cbank_1/v ro_complete_0/cbank_1/switch_3/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
-X29 ro_complete_0/cbank_1/v gnd sky130_fd_pr__cap_mim_m3_1 l=5e+06u w=5.2e+06u
-X30 ro_complete_0/cbank_1/v ro_complete_0/cbank_1/switch_5/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
-X31 ro_complete_0/cbank_1/v ro_complete_0/cbank_1/switch_4/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
-X32 ro_complete_0/cbank_1/v ro_complete_0/cbank_1/switch_0/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
-X33 ro_complete_0/cbank_1/v ro_complete_0/cbank_1/switch_1/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
-X34 ro_complete_0/cbank_1/v ro_complete_0/cbank_1/switch_2/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
-X35 gnd ro_complete_0/a0 ro_complete_0/cbank_2/switch_0/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
-X36 gnd ro_complete_0/a1 ro_complete_0/cbank_2/switch_1/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
-X37 gnd ro_complete_0/a3 ro_complete_0/cbank_2/switch_3/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
-X38 gnd ro_complete_0/a2 ro_complete_0/cbank_2/switch_2/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
-X39 gnd ro_complete_0/a4 ro_complete_0/cbank_2/switch_4/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
-X40 gnd ro_complete_0/a5 ro_complete_0/cbank_2/switch_5/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
-X41 ro_complete_0/cbank_2/v ro_complete_0/cbank_2/switch_3/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
-X42 ro_complete_0/cbank_2/v gnd sky130_fd_pr__cap_mim_m3_1 l=5e+06u w=5.2e+06u
-X43 ro_complete_0/cbank_2/v ro_complete_0/cbank_2/switch_5/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
-X44 ro_complete_0/cbank_2/v ro_complete_0/cbank_2/switch_4/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
-X45 ro_complete_0/cbank_2/v ro_complete_0/cbank_2/switch_0/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
-X46 ro_complete_0/cbank_2/v ro_complete_0/cbank_2/switch_1/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
-X47 ro_complete_0/cbank_2/v ro_complete_0/cbank_2/switch_2/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
-C0 ro_complete_0/a0 ro_complete_0/cbank_1/switch_1/vin 0.13fF
-C1 io_clamp_low[1] io_clamp_high[1] 0.53fF
-C2 ro_complete_0/cbank_2/v ro_complete_0/cbank_2/switch_0/vin 1.30fF
-C3 ro_complete_0/a0 ro_complete_0/cbank_2/v 0.05fF
-C4 ro_complete_0/cbank_0/v ro_complete_0/cbank_2/v 1.27fF
-C5 ro_complete_0/a2 ro_complete_0/cbank_2/switch_2/vin 0.09fF
-C6 ro_complete_0/cbank_0/switch_1/vin ro_complete_0/cbank_0/switch_2/vin 0.20fF
-C7 ro_complete_0/cbank_2/switch_1/vin ro_complete_0/cbank_2/switch_0/vin 0.20fF
-C8 ro_complete_0/cbank_2/switch_4/vin ro_complete_0/cbank_2/v 1.30fF
-C9 ro_complete_0/cbank_0/switch_1/vin ro_complete_0/cbank_0/switch_0/vin 0.20fF
-C10 ro_complete_0/a3 ro_complete_0/cbank_1/v 0.05fF
-C11 ro_complete_0/cbank_2/switch_3/vin ro_complete_0/cbank_2/switch_4/vin 0.20fF
-C12 ro_complete_0/cbank_0/switch_3/vin ro_complete_0/a3 0.09fF
-C13 ro_complete_0/a1 ro_complete_0/cbank_1/v 0.05fF
-C14 io_clamp_low[0] io_clamp_high[0] 0.53fF
-C15 ro_complete_0/cbank_0/switch_5/vin ro_complete_0/a5 0.09fF
-C16 io_clamp_high[2] io_analog[6] 0.53fF
-C17 ro_complete_0/a0 ro_complete_0/cbank_1/switch_0/vin 0.09fF
-C18 ro_complete_0/cbank_2/switch_3/vin ro_complete_0/cbank_2/v 1.30fF
-C19 ro_complete_0/cbank_1/switch_5/vin ro_complete_0/a5 0.09fF
-C20 ro_complete_0/cbank_0/switch_3/vin ro_complete_0/cbank_0/switch_2/vin 0.20fF
-C21 ro_complete_0/a5 ro_complete_0/cbank_2/v 0.10fF
-C22 ro_complete_0/cbank_0/switch_1/vin ro_complete_0/a0 0.13fF
-C23 ro_complete_0/cbank_2/switch_1/vin ro_complete_0/cbank_2/v 1.30fF
-C24 io_clamp_low[1] io_analog[5] 0.53fF
-C25 ro_complete_0/cbank_1/switch_1/vin ro_complete_0/cbank_1/switch_2/vin 0.20fF
-C26 ro_complete_0/cbank_0/switch_1/vin ro_complete_0/cbank_0/v 1.30fF
-C27 ro_complete_0/cbank_0/switch_4/vin ro_complete_0/a4 0.09fF
-C28 ro_complete_0/cbank_0/switch_2/vin ro_complete_0/a1 0.14fF
-C29 ro_complete_0/a2 ro_complete_0/cbank_2/v 0.05fF
-C30 ro_complete_0/cbank_1/switch_1/vin ro_complete_0/cbank_1/switch_0/vin 0.20fF
-C31 ro_complete_0/a4 ro_complete_0/cbank_2/switch_4/vin 0.09fF
-C32 ro_complete_0/cbank_0/switch_3/vin ro_complete_0/cbank_0/switch_4/vin 0.20fF
-C33 ro_complete_0/a0 ro_complete_0/cbank_1/v 0.05fF
-C34 ro_complete_0/cbank_0/v ro_complete_0/cbank_1/v 0.04fF
-C35 io_clamp_high[0] io_analog[4] 0.53fF
-C36 ro_complete_0/cbank_0/switch_4/vin ro_complete_0/a3 0.13fF
-C37 ro_complete_0/cbank_0/switch_3/vin ro_complete_0/cbank_0/v 1.30fF
-C38 ro_complete_0/cbank_0/switch_5/vin ro_complete_0/a4 0.12fF
-C39 ro_complete_0/cbank_1/switch_4/vin ro_complete_0/cbank_1/switch_5/vin 0.19fF
-C40 ro_complete_0/cbank_1/switch_2/vin ro_complete_0/a2 0.09fF
-C41 ro_complete_0/cbank_1/switch_3/vin ro_complete_0/cbank_1/switch_2/vin 0.20fF
-C42 ro_complete_0/cbank_1/switch_5/vin ro_complete_0/a4 0.12fF
-C43 ro_complete_0/a4 ro_complete_0/cbank_2/v 0.05fF
-C44 ro_complete_0/cbank_1/switch_3/vin ro_complete_0/a2 0.14fF
-C45 ro_complete_0/cbank_1/switch_1/vin ro_complete_0/cbank_1/v 1.30fF
-C46 ro_complete_0/cbank_1/switch_5/vin ro_complete_0/cbank_1/v 1.44fF
-C47 ro_complete_0/cbank_1/v ro_complete_0/cbank_2/v 1.36fF
-C48 ro_complete_0/cbank_0/switch_2/vin ro_complete_0/cbank_0/v 1.30fF
-C49 ro_complete_0/a0 ro_complete_0/cbank_0/switch_0/vin 0.09fF
-C50 ro_complete_0/cbank_0/v ro_complete_0/cbank_0/switch_0/vin 1.30fF
-C51 ro_complete_0/cbank_1/v ro_complete_0/a5 0.08fF
-C52 ro_complete_0/cbank_2/switch_4/vin ro_complete_0/cbank_2/switch_5/vin 0.19fF
-C53 io_clamp_low[2] io_analog[6] 0.53fF
-C54 ro_complete_0/cbank_1/switch_3/vin ro_complete_0/cbank_1/switch_4/vin 0.20fF
-C55 ro_complete_0/a3 ro_complete_0/cbank_2/v 0.05fF
-C56 ro_complete_0/a3 ro_complete_0/cbank_2/switch_3/vin 0.09fF
-C57 ro_complete_0/cbank_1/switch_2/vin ro_complete_0/cbank_1/v 1.30fF
-C58 ro_complete_0/a1 ro_complete_0/cbank_2/v 0.05fF
-C59 ro_complete_0/a2 ro_complete_0/cbank_1/v 0.05fF
-C60 ro_complete_0/cbank_2/switch_5/vin ro_complete_0/cbank_2/v 1.45fF
-C61 ro_complete_0/cbank_0/switch_3/vin ro_complete_0/a2 0.14fF
-C62 ro_complete_0/cbank_1/switch_3/vin ro_complete_0/cbank_1/v 1.30fF
-C63 ro_complete_0/cbank_0/switch_4/vin ro_complete_0/cbank_0/v 1.30fF
-C64 ro_complete_0/a0 ro_complete_0/cbank_2/switch_0/vin 0.09fF
-C65 ro_complete_0/cbank_1/switch_4/vin ro_complete_0/a4 0.09fF
-C66 ro_complete_0/a5 ro_complete_0/cbank_2/switch_5/vin 0.09fF
-C67 ro_complete_0/cbank_1/v ro_complete_0/cbank_1/switch_0/vin 1.30fF
-C68 io_clamp_low[2] io_clamp_high[2] 0.53fF
-C69 io_clamp_high[1] io_analog[5] 0.53fF
-C70 ro_complete_0/cbank_1/switch_2/vin ro_complete_0/a1 0.14fF
-C71 ro_complete_0/cbank_1/switch_3/vin ro_complete_0/a3 0.09fF
-C72 ro_complete_0/cbank_1/switch_4/vin ro_complete_0/cbank_1/v 1.30fF
-C73 ro_complete_0/cbank_2/switch_2/vin ro_complete_0/cbank_2/v 1.30fF
-C74 io_clamp_low[0] io_analog[4] 0.53fF
-C75 ro_complete_0/cbank_0/switch_4/vin ro_complete_0/cbank_0/switch_5/vin 0.19fF
-C76 ro_complete_0/cbank_2/switch_3/vin ro_complete_0/cbank_2/switch_2/vin 0.20fF
-C77 ro_complete_0/a4 ro_complete_0/cbank_1/v 0.05fF
-C78 ro_complete_0/a3 ro_complete_0/cbank_1/switch_4/vin 0.13fF
-C79 ro_complete_0/cbank_0/switch_5/vin ro_complete_0/cbank_0/v 1.30fF
-C80 ro_complete_0/cbank_0/switch_2/vin ro_complete_0/a2 0.09fF
-C81 ro_complete_0/cbank_2/switch_1/vin ro_complete_0/cbank_2/switch_2/vin 0.20fF
+C0 ro_complete_0/cbank_0/switch_1/vin ro_complete_0/a3 0.13fF
+C1 ro_complete_0/cbank_1/switch_3/vin ro_complete_0/cbank_1/v 1.30fF
+C2 ro_complete_0/a0 ro_complete_0/cbank_2/switch_4/vin 0.13fF
+C3 ro_complete_0/cbank_0/v ro_complete_0/cbank_1/v 1.27fF
+C4 ro_complete_0/a2 ro_complete_0/cbank_2/switch_3/vin 0.09fF
+C5 ro_complete_0/a2 ro_complete_0/cbank_2/v 0.05fF
+C6 ro_complete_0/cbank_0/switch_0/vin ro_complete_0/cbank_0/switch_1/vin 0.19fF
+C7 ro_complete_0/a2 ro_complete_0/cbank_0/switch_2/vin 0.14fF
+C8 ro_complete_0/cbank_0/switch_1/vin ro_complete_0/a4 0.09fF
+C9 ro_complete_0/cbank_0/switch_0/vin ro_complete_0/a5 0.09fF
+C10 ro_complete_0/a0 ro_complete_0/cbank_2/switch_5/vin 0.09fF
+C11 io_clamp_low[2] io_analog[6] 0.53fF
+C12 ro_complete_0/cbank_0/switch_0/vin ro_complete_0/cbank_0/v 1.30fF
+C13 ro_complete_0/cbank_1/v ro_complete_0/cbank_2/v 1.36fF
+C14 ro_complete_0/cbank_1/switch_1/vin ro_complete_0/cbank_1/switch_0/vin 0.19fF
+C15 ro_complete_0/cbank_1/switch_2/vin ro_complete_0/cbank_1/v 1.30fF
+C16 ro_complete_0/a0 ro_complete_0/cbank_2/v 0.05fF
+C17 ro_complete_0/a4 ro_complete_0/cbank_2/switch_0/vin 0.12fF
+C18 ro_complete_0/a3 ro_complete_0/cbank_2/v 0.05fF
+C19 ro_complete_0/a3 ro_complete_0/cbank_1/switch_2/vin 0.09fF
+C20 ro_complete_0/cbank_1/switch_4/vin ro_complete_0/cbank_1/switch_5/vin 0.20fF
+C21 io_clamp_low[2] io_clamp_high[2] 0.53fF
+C22 io_clamp_high[1] io_analog[5] 0.53fF
+C23 ro_complete_0/cbank_0/switch_3/vin ro_complete_0/a1 0.14fF
+C24 ro_complete_0/cbank_0/switch_1/vin ro_complete_0/cbank_0/v 1.30fF
+C25 ro_complete_0/cbank_0/switch_2/vin ro_complete_0/a3 0.09fF
+C26 ro_complete_0/cbank_1/switch_1/vin ro_complete_0/cbank_1/v 1.30fF
+C27 ro_complete_0/cbank_0/switch_5/vin ro_complete_0/cbank_0/v 1.30fF
+C28 ro_complete_0/a3 ro_complete_0/cbank_2/switch_1/vin 0.13fF
+C29 ro_complete_0/cbank_2/switch_3/vin ro_complete_0/cbank_2/switch_2/vin 0.20fF
+C30 ro_complete_0/a4 ro_complete_0/cbank_2/v 0.05fF
+C31 ro_complete_0/cbank_1/switch_4/vin ro_complete_0/cbank_1/v 1.30fF
+C32 ro_complete_0/cbank_2/switch_2/vin ro_complete_0/cbank_2/v 1.30fF
+C33 io_clamp_low[0] io_analog[4] 0.53fF
+C34 ro_complete_0/cbank_2/switch_3/vin ro_complete_0/a1 0.14fF
+C35 ro_complete_0/a5 ro_complete_0/cbank_2/switch_0/vin 0.09fF
+C36 ro_complete_0/a1 ro_complete_0/cbank_2/v 0.05fF
+C37 ro_complete_0/a2 ro_complete_0/cbank_1/v 0.05fF
+C38 ro_complete_0/cbank_0/switch_4/vin ro_complete_0/a0 0.13fF
+C39 ro_complete_0/cbank_1/switch_0/vin ro_complete_0/cbank_1/v 1.45fF
+C40 ro_complete_0/cbank_2/switch_4/vin ro_complete_0/cbank_2/switch_5/vin 0.20fF
+C41 io_clamp_low[1] io_clamp_high[1] 0.53fF
+C42 ro_complete_0/a4 ro_complete_0/cbank_2/switch_1/vin 0.09fF
+C43 ro_complete_0/cbank_0/switch_3/vin ro_complete_0/cbank_0/v 1.30fF
+C44 ro_complete_0/cbank_2/switch_1/vin ro_complete_0/cbank_2/switch_2/vin 0.20fF
+C45 ro_complete_0/cbank_1/switch_5/vin ro_complete_0/cbank_1/v 1.30fF
+C46 ro_complete_0/a4 ro_complete_0/cbank_1/switch_1/vin 0.09fF
+C47 ro_complete_0/cbank_2/switch_3/vin ro_complete_0/cbank_2/switch_4/vin 0.20fF
+C48 ro_complete_0/a5 ro_complete_0/cbank_2/v 0.08fF
+C49 ro_complete_0/a0 ro_complete_0/cbank_1/switch_5/vin 0.09fF
+C50 ro_complete_0/cbank_0/switch_1/vin ro_complete_0/cbank_0/switch_2/vin 0.20fF
+C51 ro_complete_0/cbank_2/switch_4/vin ro_complete_0/cbank_2/v 1.30fF
+C52 ro_complete_0/cbank_0/v ro_complete_0/cbank_2/v 0.04fF
+C53 ro_complete_0/cbank_1/switch_3/vin ro_complete_0/cbank_1/switch_2/vin 0.20fF
+C54 ro_complete_0/a0 ro_complete_0/cbank_1/v 0.05fF
+C55 ro_complete_0/cbank_2/switch_0/vin ro_complete_0/cbank_2/v 1.44fF
+C56 io_clamp_low[0] io_clamp_high[0] 0.53fF
+C57 ro_complete_0/a2 ro_complete_0/cbank_2/switch_2/vin 0.14fF
+C58 ro_complete_0/cbank_0/switch_2/vin ro_complete_0/cbank_0/v 1.30fF
+C59 ro_complete_0/a3 ro_complete_0/cbank_1/v 0.05fF
+C60 io_clamp_high[2] io_analog[6] 0.53fF
+C61 ro_complete_0/cbank_2/switch_5/vin ro_complete_0/cbank_2/v 1.30fF
+C62 ro_complete_0/cbank_0/switch_3/vin ro_complete_0/cbank_0/switch_2/vin 0.20fF
+C63 ro_complete_0/cbank_0/switch_4/vin ro_complete_0/cbank_0/switch_5/vin 0.20fF
+C64 ro_complete_0/cbank_2/switch_1/vin ro_complete_0/cbank_2/switch_0/vin 0.19fF
+C65 ro_complete_0/cbank_2/switch_3/vin ro_complete_0/cbank_2/v 1.30fF
+C66 io_clamp_low[1] io_analog[5] 0.53fF
+C67 ro_complete_0/cbank_1/switch_3/vin ro_complete_0/cbank_1/switch_4/vin 0.20fF
+C68 ro_complete_0/a4 ro_complete_0/cbank_1/v 0.05fF
+C69 ro_complete_0/a5 ro_complete_0/cbank_1/switch_0/vin 0.09fF
+C70 ro_complete_0/cbank_0/switch_4/vin ro_complete_0/cbank_0/v 1.30fF
+C71 ro_complete_0/a1 ro_complete_0/cbank_1/v 0.05fF
+C72 ro_complete_0/a2 ro_complete_0/cbank_1/switch_3/vin 0.09fF
+C73 ro_complete_0/a3 ro_complete_0/cbank_2/switch_2/vin 0.09fF
+C74 ro_complete_0/cbank_2/switch_1/vin ro_complete_0/cbank_2/v 1.30fF
+C75 ro_complete_0/cbank_0/switch_3/vin ro_complete_0/cbank_0/switch_4/vin 0.20fF
+C76 ro_complete_0/cbank_0/switch_0/vin ro_complete_0/a4 0.12fF
+C77 ro_complete_0/a2 ro_complete_0/cbank_0/switch_3/vin 0.09fF
+C78 io_clamp_high[0] io_analog[4] 0.53fF
+C79 ro_complete_0/cbank_1/switch_1/vin ro_complete_0/cbank_1/switch_2/vin 0.20fF
+C80 ro_complete_0/a5 ro_complete_0/cbank_1/v 0.10fF
+C81 ro_complete_0/cbank_0/switch_5/vin ro_complete_0/a0 0.09fF
+Xro_complete_0 ro_complete_0/a0 ro_complete_0/a1 ro_complete_0/a5 ro_complete_0/a4
++ ro_complete_0/a3 ro_complete_0/a2 ro_complete
 C82 io_analog[4] gnd 25.05fF
 C83 io_analog[5] gnd 25.05fF
 C84 io_analog[6] gnd 25.05fF
@@ -899,32 +853,32 @@ C741 wbs_cyc_i gnd 0.63fF
 C742 wbs_ack_o gnd 0.63fF
 C743 wb_rst_i gnd 0.63fF
 C744 wb_clk_i gnd 0.63fF
-C745 ro_complete_0/cbank_2/switch_0/vin gnd 1.30fF
-C746 ro_complete_0/cbank_2/v gnd 16.35fF
-C747 ro_complete_0/cbank_2/switch_5/vin gnd 1.06fF
-C748 ro_complete_0/a5 gnd 5.32fF
-C749 ro_complete_0/cbank_2/switch_4/vin gnd 1.16fF
-C750 ro_complete_0/a4 gnd 5.44fF
-C751 ro_complete_0/cbank_2/switch_2/vin gnd 0.95fF
-C752 ro_complete_0/a2 gnd 5.61fF
-C753 ro_complete_0/cbank_2/switch_3/vin gnd 1.30fF
-C754 ro_complete_0/a3 gnd 7.09fF
-C755 ro_complete_0/cbank_2/switch_1/vin gnd 1.53fF
-C756 ro_complete_0/a1 gnd 5.46fF
-C757 ro_complete_0/a0 gnd 7.97fF
-C758 ro_complete_0/cbank_1/switch_0/vin gnd 1.30fF
-C759 ro_complete_0/cbank_1/v gnd 18.21fF
-C760 ro_complete_0/cbank_1/switch_5/vin gnd 1.06fF
-C761 ro_complete_0/cbank_1/switch_4/vin gnd 1.16fF
-C762 ro_complete_0/cbank_1/switch_2/vin gnd 0.95fF
-C763 ro_complete_0/cbank_1/switch_3/vin gnd 1.30fF
-C764 ro_complete_0/cbank_1/switch_1/vin gnd 1.53fF
-C765 ro_complete_0/cbank_0/switch_0/vin gnd 1.30fF
-C766 ro_complete_0/cbank_0/v gnd 14.98fF
-C767 ro_complete_0/cbank_0/switch_5/vin gnd 1.06fF
-C768 ro_complete_0/cbank_0/switch_4/vin gnd 1.16fF
-C769 ro_complete_0/cbank_0/switch_2/vin gnd 0.95fF
-C770 ro_complete_0/cbank_0/switch_3/vin gnd 1.30fF
-C771 ro_complete_0/cbank_0/switch_1/vin gnd 1.53fF
-C772 ro_complete_0/ro_var_extend_0/vcont gnd 0.27fF **FLOATING
+C745 ro_complete_0/cbank_2/v gnd 17.84fF
+C746 ro_complete_0/cbank_2/switch_5/vin gnd 0.78fF
+C747 ro_complete_0/cbank_2/switch_4/vin gnd 1.50fF
+C748 ro_complete_0/cbank_2/switch_2/vin gnd 1.30fF
+C749 ro_complete_0/cbank_2/switch_3/vin gnd 0.56fF
+C750 ro_complete_0/cbank_2/switch_1/vin gnd 1.14fF
+C751 ro_complete_0/cbank_2/switch_0/vin gnd 1.02fF
+C752 ro_complete_0/cbank_1/v gnd 16.34fF
+C753 ro_complete_0/cbank_1/switch_5/vin gnd 0.78fF
+C754 ro_complete_0/a0 gnd 7.88fF
+C755 ro_complete_0/cbank_1/switch_4/vin gnd 1.50fF
+C756 ro_complete_0/a1 gnd 5.39fF
+C757 ro_complete_0/cbank_1/switch_2/vin gnd 1.30fF
+C758 ro_complete_0/a3 gnd 6.85fF
+C759 ro_complete_0/cbank_1/switch_3/vin gnd 0.56fF
+C760 ro_complete_0/a2 gnd 5.48fF
+C761 ro_complete_0/cbank_1/switch_1/vin gnd 1.14fF
+C762 ro_complete_0/a4 gnd 5.36fF
+C763 ro_complete_0/cbank_1/switch_0/vin gnd 1.02fF
+C764 ro_complete_0/a5 gnd 5.19fF
+C765 ro_complete_0/cbank_0/v gnd 14.98fF
+C766 ro_complete_0/cbank_0/switch_5/vin gnd 0.78fF
+C767 ro_complete_0/cbank_0/switch_4/vin gnd 1.50fF
+C768 ro_complete_0/cbank_0/switch_2/vin gnd 1.30fF
+C769 ro_complete_0/cbank_0/switch_3/vin gnd 0.56fF
+C770 ro_complete_0/cbank_0/switch_1/vin gnd 1.14fF
+C771 ro_complete_0/cbank_0/switch_0/vin gnd 1.02fF
+C772 ro_complete_0/ro_var_extend_0/vcont gnd 0.27fF
 .ends
