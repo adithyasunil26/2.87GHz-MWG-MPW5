@@ -1,4 +1,4 @@
-## 2.87 GHz Microwave Generator
+## 2.87 GHz Microwave Signal Generator
 
 This project contains a 2.87 GHz fractional-N frequency synthesizer based microwave generator in skywater 130nm technology. This frequency synthersizer makes use of a phase locked loop to produce the output frequency. The PLL consists of a phase detector, charge pump, loop filter, varactor based 3 stage voltage controlled oscillator and multi-modulus divider.
 
