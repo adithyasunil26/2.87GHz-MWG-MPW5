@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1642131724
+timestamp 1642133792
 << metal2 >>
 rect 262 -400 318 240
 rect 853 -400 909 240
@@ -700,10 +700,46 @@ rect -50 352000 292050 352050
 rect -50 0 0 352000
 rect 292000 0 292050 352000
 rect -50 -50 292050 0
-use ro_complete  ro_complete_0
-timestamp 1640991424
-transform 1 0 254257 0 1 330527
+use divbuf  divbuf_6
+timestamp 1641017053
+transform 1 0 245858 0 1 309157
+box -460 -1085 31200 495
+use divbuf  divbuf_7
+timestamp 1641017053
+transform 1 0 245779 0 1 306691
+box -460 -1085 31200 495
+use divbuf  divbuf_2
+timestamp 1641017053
+transform 1 0 246097 0 1 316394
+box -460 -1085 31200 495
+use divbuf  divbuf_4
+timestamp 1641017053
+transform 1 0 246017 0 1 314009
+box -460 -1085 31200 495
+use divbuf  divbuf_5
+timestamp 1641017053
+transform 1 0 245938 0 1 311543
+box -460 -1085 31200 495
+use ro_div_new  ro_div_new_0
+timestamp 1642133792
+transform 1 0 261828 0 1 321923
+box 0 0 9875 6770
+use divbuf  divbuf_1
+timestamp 1641017053
+transform 1 0 246176 0 1 318860
+box -460 -1085 31200 495
+use ro_complete  ro_complete_1
+timestamp 1642133792
+transform 1 0 247313 0 1 328719
 box -57 -5330 4455 1440
+use divbuf  divbuf_0
+timestamp 1641017053
+transform 1 0 244268 0 1 335005
+box -460 -1085 31200 495
+use divbuf  divbuf_3
+timestamp 1641017053
+transform 1 0 244347 0 1 337471
+box -460 -1085 31200 495
 << labels >>
 flabel metal3 s 291760 134615 292400 134671 0 FreeSans 560 0 0 0 gpio_analog[0]
 port 0 nsew signal bidirectional
