@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1642133792
+timestamp 1642809162
 << metal2 >>
 rect 262 -400 318 240
 rect 853 -400 909 240
@@ -708,6 +708,10 @@ use divbuf  divbuf_7
 timestamp 1641017053
 transform 1 0 245779 0 1 306691
 box -460 -1085 31200 495
+use divbuf  divbuf_5
+timestamp 1641017053
+transform 1 0 245938 0 1 311543
+box -460 -1085 31200 495
 use divbuf  divbuf_2
 timestamp 1641017053
 transform 1 0 246097 0 1 316394
@@ -716,14 +720,6 @@ use divbuf  divbuf_4
 timestamp 1641017053
 transform 1 0 246017 0 1 314009
 box -460 -1085 31200 495
-use divbuf  divbuf_5
-timestamp 1641017053
-transform 1 0 245938 0 1 311543
-box -460 -1085 31200 495
-use ro_div_new  ro_div_new_0
-timestamp 1642133792
-transform 1 0 261828 0 1 321923
-box 0 0 9875 6770
 use divbuf  divbuf_1
 timestamp 1641017053
 transform 1 0 246176 0 1 318860
