@@ -1,17 +1,19 @@
 magic
 tech sky130A
-timestamp 1641018634
+timestamp 1642812565
+<< locali >>
+rect 4336 -19 4882 166
 << metal2 >>
 rect 4055 585 4180 1635
 rect 4595 665 5015 685
 rect 4595 585 4640 665
 rect 4055 530 4640 585
-use divider  divider_0
-timestamp 1641018634
-transform 1 0 5185 0 1 235
-box -490 -235 4690 2150
 use ro_complete  ro_complete_0
-timestamp 1641018634
+timestamp 1642812565
 transform 1 0 57 0 1 5330
 box -57 -5330 4455 1440
+use divider  divider_0
+timestamp 1642812565
+transform 1 0 5185 0 1 235
+box -490 -235 4690 2150
 << end >>
