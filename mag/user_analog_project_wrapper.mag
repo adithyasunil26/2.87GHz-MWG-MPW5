@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1642897958
+timestamp 1642911889
 << metal2 >>
 rect 262 -400 318 240
 rect 853 -400 909 240
@@ -801,30 +801,42 @@ rect 108814 349155 110850 351150
 rect 114054 349155 116090 351150
 rect 159668 349191 161704 351150
 rect 164874 349155 166910 351150
-rect 86463 78792 88763 338537
-rect 75859 75823 91030 78792
-rect 127056 75823 129356 335568
-rect 164365 77556 166665 337301
-rect 153761 75823 168932 77556
-rect 204552 76938 206852 336683
-rect 231137 77556 233437 337301
+rect 164365 301000 166665 337301
+rect 11000 299000 280000 301000
+rect 164365 282016 166665 299000
+rect 164365 281993 166759 282016
+rect 164356 272547 166759 281993
 rect 273495 276989 275423 277344
 rect 273495 275847 273813 276989
 rect 275123 275847 275423 276989
 rect 273495 275548 275423 275847
-rect 193948 75823 209119 76938
-rect 220533 75823 235704 77556
-rect 6802 75789 279373 75823
-rect 6802 75451 283186 75789
-rect 6802 73748 281123 75451
+rect 164356 272524 166735 272547
+rect 164365 257000 166665 272524
+rect 10000 255000 275000 257000
+rect 164365 232000 166665 255000
+rect 11000 230000 276000 232000
+rect 164365 220000 166665 230000
+rect 10000 218000 275000 220000
+rect 164365 165000 166665 218000
+rect 11000 163000 276000 165000
+rect 164365 127000 166665 163000
+rect 12000 125000 277000 127000
+rect 164365 80650 166665 125000
+rect 164363 75873 166716 80650
+rect 7143 75808 242368 75873
+rect 253842 75808 279373 75823
+rect 7143 75789 279373 75808
+rect 7143 75451 283186 75789
+rect 7143 73748 281123 75451
 rect 282980 73748 283186 75451
-rect 6802 73413 283186 73748
-rect 86463 6833 88763 73413
-rect 127056 3864 129356 73413
-rect 164365 5597 166665 73413
-rect 204552 4979 206852 73413
-rect 231137 5597 233437 73413
+rect 7143 73486 283186 73748
+rect 7143 73379 242368 73486
+rect 247695 73413 283186 73486
 rect 278502 73408 283186 73413
+rect 164363 69372 166716 73379
+rect 164365 28000 166665 69372
+rect 11000 26000 276000 28000
+rect 164365 5597 166665 26000
 << via4 >>
 rect 273813 275847 275123 276989
 << metal5 >>
@@ -840,51 +852,81 @@ rect 108814 349155 110850 351150
 rect 114054 349155 116090 351150
 rect 159668 349191 161704 351150
 rect 164874 349155 166910 351150
-rect 79150 280881 81491 338780
-rect 75859 277912 91030 280881
-rect 119743 277912 122084 335811
-rect 157052 279645 159393 337544
-rect 153761 277912 168932 279645
-rect 197239 279027 199580 336926
-rect 223824 279645 226165 337544
-rect 193948 277912 209119 279027
-rect 220533 277912 235704 279645
-rect 12023 277906 272994 277912
-rect 12023 276989 275442 277906
-rect 12023 275847 273813 276989
+rect 10000 341000 279000 343000
+rect 157000 337000 160000 341000
+rect 157052 281993 159393 337000
+rect 157010 281056 159393 281993
+rect 157010 277890 159389 281056
+rect 255819 277906 272994 277912
+rect 255819 277890 275442 277906
+rect 9908 276989 275442 277890
+rect 9908 275847 273813 276989
 rect 275123 275847 275442 276989
-rect 12023 275136 275442 275847
-rect 12023 275109 272994 275136
-rect 79150 5833 81491 275109
-rect 119743 2864 122084 275109
-rect 157052 4597 159393 275109
-rect 197239 3979 199580 275109
-rect 223824 4597 226165 275109
+rect 9908 275136 275442 275847
+rect 9908 275109 272994 275136
+rect 9908 274937 256191 275109
+rect 157010 272682 159389 274937
+rect 157010 272524 159393 272682
+rect 157052 245000 159393 272524
+rect 9000 243000 274000 245000
+rect 157052 227000 159393 243000
+rect 10000 225000 275000 227000
+rect 157052 177000 159393 225000
+rect 12000 175000 277000 177000
+rect 157052 135000 159393 175000
+rect 11000 133000 276000 135000
+rect 157052 81139 159393 133000
+rect 156993 79768 159393 81139
+rect 156993 70211 159391 79768
+rect 156993 69283 159393 70211
+rect 157052 50000 159393 69283
+rect 11000 48000 276000 50000
+rect 157052 4597 159393 48000
 << comment >>
 rect -50 352000 292050 352050
 rect -50 0 0 352000
 rect 292000 0 292050 352000
 rect -50 -50 292050 0
-use pd  pd_2
-timestamp 1642897958
-transform 1 0 65676 0 1 170751
-box -215 -855 1685 810
-use pd  pd_1
-timestamp 1642897958
-transform 1 0 58362 0 1 223414
-box -215 -855 1685 810
-use divider  divider_2
-timestamp 1642897958
-transform 1 0 260331 0 1 239350
+use filter  filter_1
+timestamp 1640983258
+transform 1 0 38025 0 1 41313
+box -1800 -11005 6240 390
+use divider  divider_0
+timestamp 1642911854
+transform 1 0 246803 0 1 129340
 box -490 -235 4690 2150
+use pd  pd_1
+timestamp 1642911854
+transform 1 0 43920 0 1 171288
+box -215 -855 1685 810
+use divider  divider_3
+timestamp 1642911854
+transform 1 0 31863 0 1 169542
+box -490 -235 4690 2150
+use pd  pd_4
+timestamp 1642911854
+transform 1 0 36668 0 1 222858
+box -215 -855 1685 810
+use cp  cp_0
+timestamp 1640911461
+transform 1 0 37991 0 1 261137
+box -415 -1715 4690 2035
 use ro_complete  ro_complete_0
-timestamp 1642897958
+timestamp 1642911854
 transform -1 0 245567 0 -1 235887
 box -57 -5330 4455 1440
-use pd  pd_0
-timestamp 1642897958
-transform 1 0 103126 0 1 258815
-box -215 -855 1685 810
+use divider  divider_2
+timestamp 1642911854
+transform 1 0 260331 0 1 239350
+box -490 -235 4690 2150
+use pll_full  pll_full_1
+timestamp 1642911854
+transform 1 0 31292 0 1 318138
+box -5415 -2690 26430 12835
+use ro_complete  ro_complete_1
+timestamp 1642911854
+transform 1 0 247313 0 1 328719
+box -57 -5330 4455 1440
 use divbuf  divbuf_7
 timestamp 1641017053
 transform 1 0 245779 0 1 306691
@@ -917,30 +959,6 @@ use divbuf  divbuf_3
 timestamp 1641017053
 transform 1 0 244347 0 1 337471
 box -460 -1085 31200 495
-use ro_complete  ro_complete_1
-timestamp 1642897958
-transform 1 0 247313 0 1 328719
-box -57 -5330 4455 1440
-use divider  divider_0
-timestamp 1642897958
-transform 1 0 246803 0 1 129340
-box -490 -235 4690 2150
-use divider  divider_1
-timestamp 1642897958
-transform 1 0 46099 0 1 170885
-box -490 -235 4690 2150
-use cp  cp_1
-timestamp 1640911461
-transform 1 0 52227 0 1 262480
-box -415 -1715 4690 2035
-use filter  filter_1
-timestamp 1640983258
-transform 1 0 38025 0 1 41313
-box -1800 -11005 6240 390
-use pll_full  pll_full_1
-timestamp 1642897958
-transform 1 0 31292 0 1 318138
-box -5415 -2690 26430 12835
 << labels >>
 flabel metal3 s 291760 134615 292400 134671 0 FreeSans 560 0 0 0 gpio_analog[0]
 port 0 nsew signal bidirectional
@@ -1030,22 +1048,6 @@ flabel metal4 s 164647 351150 167147 352400 0 FreeSans 960 180 0 0 io_analog[4]
 port 41 nsew signal bidirectional
 flabel metal5 s 164647 351150 167147 352400 0 FreeSans 960 180 0 0 io_analog[4]
 port 41 nsew signal bidirectional
-flabel metal3 s 113797 351150 116297 352400 0 FreeSans 960 180 0 0 io_analog[5]
-port 42 nsew signal bidirectional
-flabel metal4 s 113797 351150 116297 352400 0 FreeSans 960 180 0 0 io_analog[5]
-port 42 nsew signal bidirectional
-flabel metal5 s 113797 351150 116297 352400 0 FreeSans 960 180 0 0 io_analog[5]
-port 42 nsew signal bidirectional
-flabel metal3 s 87947 351150 90447 352400 0 FreeSans 960 180 0 0 io_analog[6]
-port 43 nsew signal bidirectional
-flabel metal4 s 87947 351150 90447 352400 0 FreeSans 960 180 0 0 io_analog[6]
-port 43 nsew signal bidirectional
-flabel metal5 s 87947 351150 90447 352400 0 FreeSans 960 180 0 0 io_analog[6]
-port 43 nsew signal bidirectional
-flabel metal3 s 60097 351150 62597 352400 0 FreeSans 960 180 0 0 io_analog[7]
-port 44 nsew signal bidirectional
-flabel metal3 s 34097 351150 36597 352400 0 FreeSans 960 180 0 0 io_analog[8]
-port 45 nsew signal bidirectional
 flabel metal3 s 8097 351150 10597 352400 0 FreeSans 960 180 0 0 io_analog[9]
 port 46 nsew signal bidirectional
 flabel metal3 s 159497 351150 161997 352400 0 FreeSans 960 180 0 0 io_analog[4]
@@ -1054,30 +1056,10 @@ flabel metal4 s 159497 351150 161997 352400 0 FreeSans 960 180 0 0 io_analog[4]
 port 47 nsew signal bidirectional
 flabel metal5 s 159497 351150 161997 352400 0 FreeSans 960 180 0 0 io_analog[4]
 port 47 nsew signal bidirectional
-flabel metal3 s 108647 351150 111147 352400 0 FreeSans 960 180 0 0 io_analog[5]
-port 48 nsew signal bidirectional
-flabel metal4 s 108647 351150 111147 352400 0 FreeSans 960 180 0 0 io_analog[5]
-port 48 nsew signal bidirectional
-flabel metal5 s 108647 351150 111147 352400 0 FreeSans 960 180 0 0 io_analog[5]
-port 48 nsew signal bidirectional
-flabel metal3 s 82797 351150 85297 352400 0 FreeSans 960 180 0 0 io_analog[6]
-port 49 nsew signal bidirectional
-flabel metal4 s 82797 351150 85297 352400 0 FreeSans 960 180 0 0 io_analog[6]
-port 49 nsew signal bidirectional
-flabel metal5 s 82797 351150 85297 352400 0 FreeSans 960 180 0 0 io_analog[6]
-port 49 nsew signal bidirectional
 flabel metal3 s 163397 351150 164497 352400 0 FreeSans 960 180 0 0 io_clamp_high[0]
 port 50 nsew signal bidirectional
-flabel metal3 s 112547 351150 113647 352400 0 FreeSans 960 180 0 0 io_clamp_high[1]
-port 51 nsew signal bidirectional
-flabel metal3 s 86697 351150 87797 352400 0 FreeSans 960 180 0 0 io_clamp_high[2]
-port 52 nsew signal bidirectional
 flabel metal3 s 162147 351150 163247 352400 0 FreeSans 960 180 0 0 io_clamp_low[0]
 port 53 nsew signal bidirectional
-flabel metal3 s 111297 351150 112397 352400 0 FreeSans 960 180 0 0 io_clamp_low[1]
-port 54 nsew signal bidirectional
-flabel metal3 s 85447 351150 86547 352400 0 FreeSans 960 180 0 0 io_clamp_low[2]
-port 55 nsew signal bidirectional
 flabel metal3 s 291760 1363 292400 1419 0 FreeSans 560 0 0 0 io_in[0]
 port 56 nsew signal input
 flabel metal3 s 291760 204421 292400 204477 0 FreeSans 560 0 0 0 io_in[10]
@@ -2322,6 +2304,42 @@ flabel metal2 s 2626 -400 2682 240 0 FreeSans 560 90 0 0 wbs_stb_i
 port 676 nsew signal input
 flabel metal2 s 3217 -400 3273 240 0 FreeSans 560 90 0 0 wbs_we_i
 port 677 nsew signal input
+flabel metal3 s 85447 351150 86547 352400 0 FreeSans 960 180 0 0 io_clamp_low[2]
+port 55 nsew signal bidirectional
+flabel metal3 s 111297 351150 112397 352400 0 FreeSans 960 180 0 0 io_clamp_low[1]
+port 54 nsew signal bidirectional
+flabel metal3 s 86697 351150 87797 352400 0 FreeSans 960 180 0 0 io_clamp_high[2]
+port 52 nsew signal bidirectional
+flabel metal3 s 112547 351150 113647 352400 0 FreeSans 960 180 0 0 io_clamp_high[1]
+port 51 nsew signal bidirectional
+flabel metal5 s 82797 351150 85297 352400 0 FreeSans 960 180 0 0 io_analog[6]
+port 49 nsew signal bidirectional
+flabel metal4 s 82797 351150 85297 352400 0 FreeSans 960 180 0 0 io_analog[6]
+port 49 nsew signal bidirectional
+flabel metal3 s 82797 351150 85297 352400 0 FreeSans 960 180 0 0 io_analog[6]
+port 49 nsew signal bidirectional
+flabel metal5 s 108647 351150 111147 352400 0 FreeSans 960 180 0 0 io_analog[5]
+port 48 nsew signal bidirectional
+flabel metal4 s 108647 351150 111147 352400 0 FreeSans 960 180 0 0 io_analog[5]
+port 48 nsew signal bidirectional
+flabel metal3 s 108647 351150 111147 352400 0 FreeSans 960 180 0 0 io_analog[5]
+port 48 nsew signal bidirectional
+flabel metal3 s 34097 351150 36597 352400 0 FreeSans 960 180 0 0 io_analog[8]
+port 45 nsew signal bidirectional
+flabel metal3 s 60097 351150 62597 352400 0 FreeSans 960 180 0 0 io_analog[7]
+port 44 nsew signal bidirectional
+flabel metal5 s 87947 351150 90447 352400 0 FreeSans 960 180 0 0 io_analog[6]
+port 43 nsew signal bidirectional
+flabel metal4 s 87947 351150 90447 352400 0 FreeSans 960 180 0 0 io_analog[6]
+port 43 nsew signal bidirectional
+flabel metal3 s 87947 351150 90447 352400 0 FreeSans 960 180 0 0 io_analog[6]
+port 43 nsew signal bidirectional
+flabel metal5 s 113797 351150 116297 352400 0 FreeSans 960 180 0 0 io_analog[5]
+port 42 nsew signal bidirectional
+flabel metal4 s 113797 351150 116297 352400 0 FreeSans 960 180 0 0 io_analog[5]
+port 42 nsew signal bidirectional
+flabel metal3 s 113797 351150 116297 352400 0 FreeSans 960 180 0 0 io_analog[5]
+port 42 nsew signal bidirectional
 << properties >>
 string FIXED_BBOX 0 0 292000 352000
 << end >>
