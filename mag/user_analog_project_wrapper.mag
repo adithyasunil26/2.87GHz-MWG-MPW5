@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1642944651
+timestamp 1643022782
 << locali >>
 rect 247445 329554 247576 329570
 rect 247445 329454 247459 329554
@@ -1098,46 +1098,110 @@ rect -50 352000 292050 352050
 rect -50 0 0 352000
 rect 292000 0 292050 352000
 rect -50 -50 292050 0
+use divbuf  divbuf_19
+timestamp 1641017053
+transform 1 0 27511 0 1 45357
+box -460 -1085 31200 495
 use filter  filter_1
 timestamp 1640983258
 transform 1 0 38025 0 1 41313
 box -1800 -11005 6240 390
+use divbuf  divbuf_25
+timestamp 1641017053
+transform 1 0 237817 0 1 138431
+box -460 -1085 31200 495
+use divbuf  divbuf_24
+timestamp 1641017053
+transform 1 0 237896 0 1 140897
+box -460 -1085 31200 495
+use divbuf  divbuf_23
+timestamp 1641017053
+transform 1 0 237976 0 1 143283
+box -460 -1085 31200 495
 use divider  divider_0
-timestamp 1642911854
+timestamp 1643022782
 transform 1 0 246803 0 1 129340
 box -490 -235 4690 2150
-use pd  pd_1
-timestamp 1642911854
-transform 1 0 43920 0 1 171288
+use divbuf  divbuf_18
+timestamp 1641017053
+transform 1 0 30445 0 1 186973
+box -460 -1085 31200 495
+use divbuf  divbuf_17
+timestamp 1641017053
+transform 1 0 30365 0 1 184587
+box -460 -1085 31200 495
+use divbuf  divbuf_16
+timestamp 1641017053
+transform 1 0 30286 0 1 182121
+box -460 -1085 31200 495
+use divbuf  divbuf_15
+timestamp 1641017053
+transform 1 0 30286 0 1 179927
+box -460 -1085 31200 495
+use pd  pd_5
+timestamp 1643022782
+transform 1 0 38673 0 1 170517
 box -215 -855 1685 810
-use divider  divider_3
-timestamp 1642911854
-transform 1 0 31863 0 1 169542
-box -490 -235 4690 2150
 use pd  pd_4
-timestamp 1642911854
+timestamp 1643022782
 transform 1 0 36668 0 1 222858
 box -215 -855 1685 810
-use cp  cp_0
-timestamp 1640911461
-transform 1 0 37991 0 1 261137
-box -415 -1715 4690 2035
+use divider  divider_3
+timestamp 1643022782
+transform 1 0 31863 0 1 169542
+box -490 -235 4690 2150
+use divbuf  divbuf_14
+timestamp 1641017053
+transform 1 0 31964 0 1 233669
+box -460 -1085 31200 495
+use divbuf  divbuf_13
+timestamp 1641017053
+transform 1 0 31964 0 1 235863
+box -460 -1085 31200 495
+use divbuf  divbuf_12
+timestamp 1641017053
+transform 1 0 32043 0 1 238329
+box -460 -1085 31200 495
+use divbuf  divbuf_11
+timestamp 1641017053
+transform 1 0 32123 0 1 240715
+box -460 -1085 31200 495
+use divbuf  divbuf_10
+timestamp 1641017053
+transform 1 0 28832 0 1 268030
+box -460 -1085 31200 495
+use divbuf  divbuf_9
+timestamp 1641017053
+transform 1 0 28752 0 1 265644
+box -460 -1085 31200 495
+use divbuf  divbuf_8
+timestamp 1641017053
+transform 1 0 28673 0 1 263178
+box -460 -1085 31200 495
+use divbuf  divbuf_22
+timestamp 1641017053
+transform 1 0 234947 0 1 265819
+box -460 -1085 31200 495
+use divbuf  divbuf_21
+timestamp 1641017053
+transform 1 0 234867 0 1 263433
+box -460 -1085 31200 495
+use divbuf  divbuf_20
+timestamp 1641017053
+transform 1 0 234788 0 1 260967
+box -460 -1085 31200 495
 use ro_complete  ro_complete_0
-timestamp 1642943789
+timestamp 1643022782
 transform -1 0 245567 0 -1 235887
 box -57 -5330 4455 1440
 use divider  divider_2
-timestamp 1642911854
+timestamp 1643022782
 transform 1 0 260331 0 1 239350
 box -490 -235 4690 2150
 use pll_full  pll_full_1
-timestamp 1642911854
+timestamp 1643022782
 transform 1 0 31292 0 1 318138
 box -5415 -2690 26430 12835
-use ro_complete  ro_complete_1
-timestamp 1642943789
-transform 1 0 247313 0 1 328719
-box -57 -5330 4455 1440
 use divbuf  divbuf_7
 timestamp 1641017053
 transform 1 0 245779 0 1 306691
@@ -1170,6 +1234,14 @@ use divbuf  divbuf_3
 timestamp 1641017053
 transform 1 0 244347 0 1 337471
 box -460 -1085 31200 495
+use ro_complete  ro_complete_1
+timestamp 1643022782
+transform 1 0 247313 0 1 328719
+box -57 -5330 4455 1440
+use cp  cp_0
+timestamp 1640911461
+transform 1 0 21911 0 1 264642
+box -415 -1715 4690 2035
 << labels >>
 flabel metal3 s 291760 134615 292400 134671 0 FreeSans 560 0 0 0 gpio_analog[0]
 port 0 nsew signal bidirectional
