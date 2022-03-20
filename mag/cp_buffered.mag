@@ -1,6 +1,21 @@
 magic
 tech sky130A
-timestamp 1647806434
+timestamp 1647816110
+<< nwell >>
+rect 2072 1415 2306 1709
+rect 3397 1364 3631 1658
+<< nsubdiff >>
+rect 2117 1574 2258 1581
+rect 2117 1467 2129 1574
+rect 2242 1467 2258 1574
+rect 2117 1451 2258 1467
+rect 3441 1518 3576 1543
+rect 3441 1428 3465 1518
+rect 3555 1428 3576 1518
+rect 3441 1399 3576 1428
+<< nsubdiffcont >>
+rect 2129 1467 2242 1574
+rect 3465 1428 3555 1518
 << locali >>
 rect -151 4655 4 4664
 rect -151 4633 -137 4655
@@ -12,7 +27,16 @@ rect -152 3891 3965 4037
 rect -42 3886 3965 3891
 rect 3805 3537 3955 3886
 rect 27 1458 160 2216
+rect 2116 1574 2262 1589
+rect 2116 1467 2129 1574
+rect 2242 1467 2262 1574
 rect 27 1334 581 1458
+rect 2116 1450 2262 1467
+rect 3321 1531 3448 1755
+rect 3321 1518 3565 1531
+rect 3321 1428 3465 1518
+rect 3555 1428 3565 1518
+rect 3321 1417 3565 1428
 rect 4708 1370 5156 1530
 rect 49 1331 581 1334
 rect 448 1255 578 1331
@@ -144,22 +168,22 @@ rect -339 -776 386 -753
 rect 169 -2019 397 -2008
 rect 157 -2373 397 -2019
 rect 157 -2384 385 -2373
+use tapered_buf  tapered_buf_0
+timestamp 1647816110
+transform 1 0 469 0 1 5051
+box -470 -910 43675 404
+use tapered_buf  tapered_buf_1
+timestamp 1647816110
+transform 1 0 447 0 1 -1140
+box -470 -910 43675 404
+use tapered_buf  tapered_buf_2
+timestamp 1647816110
+transform 1 0 447 0 1 -2688
+box -470 -910 43675 404
 use cp  cp_0
-timestamp 1640911461
+timestamp 1647816110
 transform 1 0 415 0 1 1715
 box -415 -1715 4690 2035
-use tapered_buf  tapered_buf_0
-timestamp 1647784636
-transform 1 0 469 0 1 5051
-box -470 -910 43675 400
-use tapered_buf  tapered_buf_1
-timestamp 1647784636
-transform 1 0 447 0 1 -1140
-box -470 -910 43675 400
-use tapered_buf  tapered_buf_2
-timestamp 1647784636
-transform 1 0 447 0 1 -2688
-box -470 -910 43675 400
 << labels >>
 rlabel space 5 5096 5 5096 1 up
 rlabel space 7 -1106 7 -1106 1 out
