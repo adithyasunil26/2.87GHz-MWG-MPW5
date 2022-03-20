@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1643048518
+timestamp 1647769399
 << nwell >>
 rect 2885 1480 3070 1620
 rect 3370 1480 4310 1620
@@ -503,34 +503,34 @@ rect 961 -100 1080 -90
 rect 961 -200 970 -100
 rect 1070 -200 1080 -100
 rect 961 -209 1080 -200
-use tspc  tspc_2
+use prescaler  prescaler_0
+timestamp 1640957100
+transform 1 0 25 0 1 200
+box -210 -195 1930 1715
+use nor  nor_1
+timestamp 1640957264
+transform -1 0 3315 0 -1 1605
+box -55 -300 245 610
+use nor  nor_0
+timestamp 1640957264
+transform -1 0 2830 0 -1 1605
+box -55 -300 245 610
+use and  and_0
+timestamp 1640957225
+transform -1 0 2330 0 -1 1465
+box -85 -435 335 475
+use tspc  tspc_0
 timestamp 1640956963
-transform 1 0 3640 0 1 495
+transform 1 0 2060 0 1 495
 box -70 -490 690 465
 use tspc  tspc_1
 timestamp 1640956963
 transform 1 0 2850 0 1 495
 box -70 -490 690 465
-use tspc  tspc_0
+use tspc  tspc_2
 timestamp 1640956963
-transform 1 0 2060 0 1 495
+transform 1 0 3640 0 1 495
 box -70 -490 690 465
-use prescaler  prescaler_0
-timestamp 1643048518
-transform 1 0 25 0 1 200
-box -210 -195 1930 1715
-use and  and_0
-timestamp 1640957225
-transform -1 0 2330 0 -1 1465
-box -85 -435 335 475
-use nor  nor_0
-timestamp 1640957264
-transform -1 0 2830 0 -1 1605
-box -55 -300 245 610
-use nor  nor_1
-timestamp 1640957264
-transform -1 0 3315 0 -1 1605
-box -55 -300 245 610
 << labels >>
 rlabel metal4 1915 15 2005 45 1 gnd
 rlabel metal4 2715 15 2810 45 1 gnd
@@ -545,4 +545,6 @@ rlabel metal4 1915 1850 2035 1885 1 gnd
 rlabel locali 4330 410 4395 435 1 Out
 rlabel metal2 -185 430 -155 450 1 clk
 rlabel metal2 -185 1790 225 1805 1 mc2
+rlabel locali 2526 -148 2526 -148 1 gnd!
+rlabel locali 1856 954 1856 954 1 vdd!
 << end >>

@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1640958486
+timestamp 1647769443
 << nwell >>
 rect 0 680 1530 690
 rect 0 580 1555 680
@@ -328,18 +328,18 @@ rect 1055 -565 1115 -560
 rect 1065 -685 1105 -565
 rect -70 -715 20 -685
 rect 1020 -715 1105 -685
-use tspc_r  tspc_r_0
-timestamp 1640958486
-transform 1 0 145 0 1 380
-box -145 -380 875 305
-use tspc_r  tspc_r_1
-timestamp 1640958486
-transform 1 0 145 0 -1 -425
-box -145 -380 875 305
 use and_pd  and_pd_0
 timestamp 1640958486
 transform 1 0 1100 0 1 395
 box -120 -375 335 275
+use tspc_r  tspc_r_1
+timestamp 1640958486
+transform 1 0 145 0 -1 -425
+box -145 -380 875 305
+use tspc_r  tspc_r_0
+timestamp 1640958486
+transform 1 0 145 0 1 380
+box -145 -380 875 305
 << labels >>
 rlabel nwell 980 600 1050 630 1 VDD
 rlabel nwell 980 630 1020 640 1 VDD
@@ -353,4 +353,6 @@ rlabel metal1 1415 335 1470 350 1 UP
 rlabel metal1 1415 200 1470 215 1 DOWN
 rlabel metal2 1435 280 1460 305 1 R
 rlabel metal2 1140 280 1185 295 1 R
+rlabel locali 521 -815 521 -815 1 gnd!
+rlabel metal4 -44 648 -44 648 1 vdd!
 << end >>
