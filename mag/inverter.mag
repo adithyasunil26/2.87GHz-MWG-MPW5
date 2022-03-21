@@ -1,8 +1,9 @@
 magic
 tech sky130A
-timestamp 1640544842
+timestamp 1647877520
 << nwell >>
-rect 75 0 310 455
+rect 75 548 309 557
+rect 75 0 310 548
 << nmos >>
 rect 185 -210 200 -60
 << pmos >>
@@ -103,6 +104,20 @@ rect 215 195 245 225
 rect 215 145 245 175
 rect 215 95 245 125
 rect 215 45 245 75
+<< psubdiff >>
+rect 147 -267 203 -253
+rect 147 -299 159 -267
+rect 190 -299 203 -267
+rect 147 -311 203 -299
+<< nsubdiff >>
+rect 159 524 218 538
+rect 159 497 175 524
+rect 202 497 218 524
+rect 159 485 218 497
+<< psubdiffcont >>
+rect 159 -299 190 -267
+<< nsubdiffcont >>
+rect 175 497 202 524
 << poly >>
 rect 185 420 200 445
 rect 185 0 200 40
@@ -115,7 +130,12 @@ rect 185 -245 200 -210
 << polycont >>
 rect 160 -30 180 -10
 << locali >>
-rect 140 420 170 490
+rect 75 548 309 557
+rect 75 524 310 548
+rect 75 497 175 524
+rect 202 497 310 524
+rect 75 483 310 497
+rect 140 420 170 483
 rect 130 415 180 420
 rect 130 395 140 415
 rect 170 395 180 415
@@ -193,16 +213,12 @@ rect 205 -175 255 -155
 rect 205 -205 215 -175
 rect 245 -205 255 -175
 rect 205 -210 255 -205
-rect 140 -265 170 -210
-<< rlocali >>
-rect 140 490 170 520
-rect 140 -295 170 -265
-<< metal1 >>
-rect 75 490 315 520
-rect 75 -295 310 -265
+rect 140 -252 170 -210
+rect 106 -267 270 -252
+rect 106 -299 159 -267
+rect 190 -299 270 -267
+rect 106 -311 270 -299
 << labels >>
-rlabel metal1 75 -295 310 -265 1 GND
 rlabel locali 75 -30 180 -10 1 IN
 rlabel locali 225 -30 310 -10 1 OUT
-rlabel metal1 75 490 315 520 1 VDD
 << end >>
