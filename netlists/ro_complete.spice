@@ -1,0 +1,151 @@
+* SPICE3 file created from ro_complete.ext - technology: sky130A
+
+X0 cbank_0/v ro_var_extend_0/w_n120_n750# ro_var_extend_0/w_n120_n750# sky130_fd_pr__cap_var_lvt pd=0u ps=0u ad=0p as=0p w=1e+06u l=180000u
+X1 cbank_2/v ro_var_extend_0/w_n120_n750# ro_var_extend_0/w_n120_n750# sky130_fd_pr__cap_var_lvt pd=0u ps=0u ad=0p as=0p w=1e+06u l=180000u
+X2 cbank_1/v cbank_0/v ro_var_extend_0/vdd ro_var_extend_0/vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=300000u
+X3 cbank_2/v cbank_1/v ro_var_extend_0/vdd ro_var_extend_0/vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=300000u
+X4 cbank_0/v cbank_2/v ro_var_extend_0/vdd ro_var_extend_0/vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=300000u
+X5 cbank_1/v ro_var_extend_0/w_n120_n750# ro_var_extend_0/w_n120_n750# sky130_fd_pr__cap_var_lvt pd=0u ps=0u ad=0p as=0p w=1e+06u l=180000u
+X6 cbank_1/v cbank_0/v gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=300000u
+X7 cbank_0/v cbank_2/v gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=300000u
+X8 cbank_2/v cbank_1/v gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=300000u
+X9 gnd a0 cbank_0/switch_0/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X10 gnd a1 cbank_0/switch_1/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X11 gnd a3 cbank_0/switch_3/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X12 gnd a2 cbank_0/switch_2/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X13 gnd a4 cbank_0/switch_4/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X14 gnd a5 cbank_0/switch_5/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X15 cbank_0/v cbank_0/switch_3/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X16 cbank_0/v gnd sky130_fd_pr__cap_mim_m3_1 l=5e+06u w=5.2e+06u
+X17 cbank_0/v cbank_0/switch_5/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X18 cbank_0/v cbank_0/switch_4/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X19 cbank_0/v cbank_0/switch_0/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X20 cbank_0/v cbank_0/switch_1/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X21 cbank_0/v cbank_0/switch_2/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X22 gnd a0 cbank_1/switch_0/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X23 gnd a1 cbank_1/switch_1/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X24 gnd a3 cbank_1/switch_3/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X25 gnd a2 cbank_1/switch_2/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X26 gnd a4 cbank_1/switch_4/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X27 gnd a5 cbank_1/switch_5/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X28 cbank_1/v cbank_1/switch_3/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X29 cbank_1/v gnd sky130_fd_pr__cap_mim_m3_1 l=5e+06u w=5.2e+06u
+X30 cbank_1/v cbank_1/switch_5/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X31 cbank_1/v cbank_1/switch_4/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X32 cbank_1/v cbank_1/switch_0/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X33 cbank_1/v cbank_1/switch_1/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X34 cbank_1/v cbank_1/switch_2/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X35 gnd a0 cbank_2/switch_0/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X36 gnd a1 cbank_2/switch_1/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X37 gnd a3 cbank_2/switch_3/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X38 gnd a2 cbank_2/switch_2/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X39 gnd a4 cbank_2/switch_4/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X40 gnd a5 cbank_2/switch_5/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X41 cbank_2/v cbank_2/switch_3/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X42 cbank_2/v gnd sky130_fd_pr__cap_mim_m3_1 l=5e+06u w=5.2e+06u
+X43 cbank_2/v cbank_2/switch_5/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X44 cbank_2/v cbank_2/switch_4/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X45 cbank_2/v cbank_2/switch_0/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X46 cbank_2/v cbank_2/switch_1/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X47 cbank_2/v cbank_2/switch_2/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+C0 cbank_0/switch_1/vin cbank_0/switch_2/vin 0.20fF
+C1 a3 cbank_2/v 0.05fF
+C2 a3 cbank_2/switch_3/vin 0.09fF
+C3 cbank_1/switch_2/vin cbank_1/v 1.30fF
+C4 a1 cbank_2/v 0.05fF
+C5 a2 cbank_1/v 0.05fF
+C6 cbank_0/switch_3/vin a2 0.14fF
+C7 cbank_1/switch_3/vin cbank_1/v 1.30fF
+C8 cbank_2/switch_5/vin cbank_2/v 1.43fF
+C9 cbank_1/switch_4/vin a4 0.09fF
+C10 a5 cbank_2/switch_5/vin 0.09fF
+C11 cbank_1/v cbank_1/switch_0/vin 1.30fF
+C12 cbank_0/switch_3/vin cbank_0/switch_2/vin 0.20fF
+C13 cbank_1/switch_2/vin a1 0.14fF
+C14 cbank_1/switch_3/vin a3 0.09fF
+C15 cbank_1/switch_4/vin cbank_1/v 1.30fF
+C16 cbank_0/switch_4/vin a4 0.09fF
+C17 cbank_2/switch_2/vin cbank_2/v 1.30fF
+C18 cbank_2/switch_3/vin cbank_2/switch_2/vin 0.20fF
+C19 cbank_0/switch_2/vin a1 0.14fF
+C20 a4 cbank_1/v 0.05fF
+C21 a0 cbank_1/switch_1/vin 0.13fF
+C22 a3 cbank_1/switch_4/vin 0.13fF
+C23 cbank_0/switch_5/vin cbank_0/v 1.30fF
+C24 cbank_2/switch_1/vin cbank_2/switch_2/vin 0.20fF
+C25 cbank_0/switch_3/vin cbank_0/switch_4/vin 0.20fF
+C26 a0 cbank_2/v 0.05fF
+C27 a0 cbank_2/switch_0/vin 0.09fF
+C28 cbank_0/v cbank_2/v 1.27fF
+C29 cbank_0/switch_4/vin a3 0.13fF
+C30 a2 cbank_2/switch_2/vin 0.09fF
+C31 cbank_0/switch_1/vin cbank_0/switch_0/vin 0.20fF
+C32 cbank_2/switch_4/vin cbank_2/v 1.30fF
+C33 a3 cbank_1/v 0.05fF
+C34 cbank_2/switch_3/vin cbank_2/switch_4/vin 0.20fF
+C35 cbank_0/switch_3/vin a3 0.09fF
+C36 a1 cbank_1/v 0.05fF
+C37 cbank_0/switch_5/vin a5 0.09fF
+C38 a0 cbank_1/switch_0/vin 0.09fF
+C39 cbank_2/v cbank_2/switch_0/vin 1.30fF
+C40 cbank_0/switch_2/vin cbank_0/v 1.30fF
+C41 cbank_2/switch_3/vin cbank_2/v 1.30fF
+C42 cbank_1/switch_5/vin a5 0.09fF
+C43 a5 cbank_2/v 0.10fF
+C44 cbank_0/switch_1/vin a0 0.13fF
+C45 cbank_1/switch_1/vin cbank_1/switch_2/vin 0.20fF
+C46 cbank_0/switch_1/vin cbank_0/v 1.30fF
+C47 cbank_2/switch_1/vin cbank_2/v 1.30fF
+C48 cbank_2/switch_1/vin cbank_2/switch_0/vin 0.20fF
+C49 a2 cbank_2/v 0.05fF
+C50 cbank_1/switch_1/vin cbank_1/switch_0/vin 0.20fF
+C51 cbank_0/switch_4/vin cbank_0/v 1.30fF
+C52 a4 cbank_2/switch_4/vin 0.09fF
+C53 a0 cbank_1/v 0.05fF
+C54 cbank_0/v cbank_1/v 0.04fF
+C55 cbank_0/switch_3/vin cbank_0/v 1.30fF
+C56 cbank_0/switch_5/vin a4 0.12fF
+C57 cbank_1/switch_4/vin cbank_1/switch_5/vin 0.19fF
+C58 cbank_1/switch_2/vin a2 0.09fF
+C59 cbank_1/switch_3/vin cbank_1/switch_2/vin 0.20fF
+C60 cbank_0/switch_4/vin cbank_0/switch_5/vin 0.19fF
+C61 cbank_1/switch_5/vin a4 0.12fF
+C62 cbank_1/switch_3/vin a2 0.14fF
+C63 a4 cbank_2/v 0.05fF
+C64 cbank_0/switch_2/vin a2 0.09fF
+C65 cbank_1/switch_1/vin cbank_1/v 1.30fF
+C66 cbank_1/switch_5/vin cbank_1/v 1.45fF
+C67 a0 cbank_0/switch_0/vin 0.09fF
+C68 cbank_1/v cbank_2/v 1.36fF
+C69 cbank_0/v cbank_0/switch_0/vin 1.30fF
+C70 cbank_1/switch_3/vin cbank_1/switch_4/vin 0.20fF
+C71 cbank_1/v a5 0.08fF
+C72 cbank_2/switch_4/vin cbank_2/switch_5/vin 0.19fF
+C73 cbank_2/switch_0/vin gnd 1.30fF
+C74 cbank_2/v gnd 16.50fF
+C75 cbank_2/switch_5/vin gnd 1.06fF
+C76 a5 gnd 7.35fF
+C77 cbank_2/switch_4/vin gnd 1.16fF
+C78 a4 gnd 6.10fF
+C79 cbank_2/switch_2/vin gnd 0.95fF
+C80 a2 gnd 5.37fF
+C81 cbank_2/switch_3/vin gnd 1.30fF
+C82 a3 gnd 6.08fF
+C83 cbank_2/switch_1/vin gnd 1.53fF
+C84 a1 gnd 6.97fF
+C85 a0 gnd 5.61fF
+C86 cbank_1/switch_0/vin gnd 1.30fF
+C87 cbank_1/v gnd 17.18fF
+C88 cbank_1/switch_5/vin gnd 1.06fF
+C89 cbank_1/switch_4/vin gnd 1.16fF
+C90 cbank_1/switch_2/vin gnd 0.95fF
+C91 cbank_1/switch_3/vin gnd 1.30fF
+C92 cbank_1/switch_1/vin gnd 1.53fF
+C93 cbank_0/switch_0/vin gnd 1.30fF
+C94 cbank_0/v gnd 15.09fF
+C95 cbank_0/switch_5/vin gnd 1.06fF
+C96 cbank_0/switch_4/vin gnd 1.16fF
+C97 cbank_0/switch_2/vin gnd 0.95fF
+C98 cbank_0/switch_3/vin gnd 1.30fF
+C99 cbank_0/switch_1/vin gnd 1.53fF
+C100 ro_var_extend_0/vcont gnd 0.27fF **FLOATING

@@ -1,0 +1,687 @@
+* SPICE3 file created from pll_full.ext - technology: sky130A
+
+.lib "/Volumes/Adithya_Ext/Coding_stuff/sky130test/ro/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.param SUPPLY = 1.8
+.global vdd gnd
+
+Vdd vdd gnd 'SUPPLY'
+Vin_ref ref gnd pulse 0 1.8 0 0 0 5.33n 10.66n
+Vin_mc mc2 gnd 0
+
+X0 pd_0/UP pd_0/tspc_r_0/Qbar1 gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X1 pd_0/tspc_r_0/Qbar pd_0/UP gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X2 pd_0/tspc_r_0/Z1 vdd vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X3 pd_0/UP pd_0/tspc_r_0/Qbar1 vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X4 pd_0/tspc_r_0/Qbar1 ref pd_0/tspc_r_0/z5 gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X5 pd_0/tspc_r_0/z5 pd_0/tspc_r_0/Z3 gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X6 pd_0/tspc_r_0/Z3 ref vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X7 pd_0/tspc_r_0/Z2 ref pd_0/tspc_r_0/Z1 vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X8 pd_0/tspc_r_0/Z3 pd_0/tspc_r_0/Z2 pd_0/tspc_r_0/Z4 gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X9 pd_0/tspc_r_0/Z4 ref gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X10 pd_0/tspc_r_0/Z3 pd_0/R gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X11 pd_0/tspc_r_0/Qbar pd_0/UP vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X12 pd_0/tspc_r_0/Qbar1 pd_0/tspc_r_0/Z3 vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X13 pd_0/tspc_r_0/Z2 vdd gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X14 pd_0/DOWN pd_0/tspc_r_1/Qbar1 gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X15 pd_0/tspc_r_1/Qbar pd_0/DOWN gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X16 pd_0/tspc_r_1/Z1 vdd vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X17 pd_0/DOWN pd_0/tspc_r_1/Qbar1 vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X18 pd_0/tspc_r_1/Qbar1 div pd_0/tspc_r_1/z5 gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X19 pd_0/tspc_r_1/z5 pd_0/tspc_r_1/Z3 gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X20 pd_0/tspc_r_1/Z3 div vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X21 pd_0/tspc_r_1/Z2 div pd_0/tspc_r_1/Z1 vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X22 pd_0/tspc_r_1/Z3 pd_0/tspc_r_1/Z2 pd_0/tspc_r_1/Z4 gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X23 pd_0/tspc_r_1/Z4 div gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X24 pd_0/tspc_r_1/Z3 pd_0/R gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X25 pd_0/tspc_r_1/Qbar pd_0/DOWN vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X26 pd_0/tspc_r_1/Qbar1 pd_0/tspc_r_1/Z3 vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X27 pd_0/tspc_r_1/Z2 vdd gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X28 pd_0/R pd_0/and_pd_0/Out1 vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X29 pd_0/and_pd_0/Out1 pd_0/UP pd_0/and_pd_0/Z1 gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X30 pd_0/and_pd_0/Out1 pd_0/UP vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X31 pd_0/and_pd_0/Z1 pd_0/DOWN gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X32 pd_0/and_pd_0/Out1 pd_0/DOWN vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X33 pd_0/R pd_0/and_pd_0/Out1 gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X34 cp_0/a_7110_n2840# cp_0/down gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=9e+06u l=1.8e+06u
+X35 cp_0/a_7110_0# cp_0/upbar cp_0/a_6370_0# vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+07u l=1.8e+06u
+X36 pd_0/DOWN pd_0/UP gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=9e+06u l=1.8e+06u
+X37 pd_0/DOWN pd_0/DOWN vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+07u l=1.8e+06u
+X38 cp_0/a_3060_0# vdd vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+07u l=1.8e+06u
+X39 vdd gnd cp_0/a_3060_0# vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+07u l=1.8e+06u
+X40 cp_0/a_3060_n2840# cp_0/a_1710_0# cp_0/a_1710_0# gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=9e+06u l=1.8e+06u
+X41 vdd pd_0/UP gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=9e+06u l=1.8e+06u
+X42 gnd cp_0/out cp_0/a_3060_n2840# gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=9e+06u l=1.8e+06u
+X43 cp_0/a_1710_0# pd_0/DOWN vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+07u l=1.8e+06u
+X44 cp_0/out vdd cp_0/a_7110_0# vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+07u l=1.8e+06u
+X45 gnd vdd cp_0/a_3060_n2840# gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=9e+06u l=1.8e+06u
+X46 cp_0/out cp_0/a_1710_0# cp_0/a_7110_n2840# gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=9e+06u l=1.8e+06u
+X47 vdd cp_0/out cp_0/a_3060_0# vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+07u l=1.8e+06u
+X48 cp_0/out filter_0/a_4216_n2998# gnd sky130_fd_pr__res_xhigh_po w=350000u l=9e+06u
+X49 filter_0/a_4216_n5230# gnd sky130_fd_pr__cap_mim_m3_1 l=3e+07u w=3e+07u
+X50 filter_0/a_4216_n5230# gnd sky130_fd_pr__cap_mim_m3_1 l=3e+07u w=3e+07u
+X51 cp_0/out gnd sky130_fd_pr__cap_mim_m3_1 l=3e+07u w=3e+07u
+X52 filter_0/a_4216_n5230# filter_0/a_4216_n2998# gnd sky130_fd_pr__res_xhigh_po w=350000u l=9e+06u
+X53 filter_0/a_4216_n5230# gnd sky130_fd_pr__cap_mim_m3_1 l=3e+07u w=3e+07u
+X54 filter_0/a_4216_n5230# gnd sky130_fd_pr__cap_mim_m3_1 l=3e+07u w=3e+07u
+X55 filter_0/a_4216_n5230# gnd sky130_fd_pr__cap_mim_m3_1 l=3e+07u w=3e+07u
+X56 ro_complete_0/cbank_0/v cp_0/out cp_0/out sky130_fd_pr__cap_var_lvt pd=0u ps=0u ad=0p as=0p w=1e+06u l=180000u
+X57 vco cp_0/out cp_0/out sky130_fd_pr__cap_var_lvt pd=0u ps=0u ad=0p as=0p w=1e+06u l=180000u
+X58 ro_complete_0/cbank_1/v ro_complete_0/cbank_0/v ro_complete_0/ro_var_extend_0/vdd ro_complete_0/ro_var_extend_0/vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=300000u
+X59 vco ro_complete_0/cbank_1/v ro_complete_0/ro_var_extend_0/vdd ro_complete_0/ro_var_extend_0/vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=300000u
+X60 ro_complete_0/cbank_0/v vco ro_complete_0/ro_var_extend_0/vdd ro_complete_0/ro_var_extend_0/vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=300000u
+X61 ro_complete_0/cbank_1/v cp_0/out cp_0/out sky130_fd_pr__cap_var_lvt pd=0u ps=0u ad=0p as=0p w=1e+06u l=180000u
+X62 ro_complete_0/cbank_1/v ro_complete_0/cbank_0/v gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=300000u
+X63 ro_complete_0/cbank_0/v vco gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=300000u
+X64 vco ro_complete_0/cbank_1/v gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=300000u
+X65 gnd ro_complete_0/a0 ro_complete_0/cbank_0/switch_0/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X66 gnd ro_complete_0/a1 ro_complete_0/cbank_0/switch_1/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X67 gnd ro_complete_0/a3 ro_complete_0/cbank_0/switch_3/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X68 gnd ro_complete_0/a2 ro_complete_0/cbank_0/switch_2/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X69 gnd ro_complete_0/a4 ro_complete_0/cbank_0/switch_4/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X70 gnd ro_complete_0/a5 ro_complete_0/cbank_0/switch_5/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X71 ro_complete_0/cbank_0/v ro_complete_0/cbank_0/switch_3/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X72 ro_complete_0/cbank_0/v gnd sky130_fd_pr__cap_mim_m3_1 l=5e+06u w=5.2e+06u
+X73 ro_complete_0/cbank_0/v ro_complete_0/cbank_0/switch_5/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X74 ro_complete_0/cbank_0/v ro_complete_0/cbank_0/switch_4/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X75 ro_complete_0/cbank_0/v ro_complete_0/cbank_0/switch_0/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X76 ro_complete_0/cbank_0/v ro_complete_0/cbank_0/switch_1/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X77 ro_complete_0/cbank_0/v ro_complete_0/cbank_0/switch_2/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X78 gnd ro_complete_0/a0 ro_complete_0/cbank_1/switch_0/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X79 gnd ro_complete_0/a1 ro_complete_0/cbank_1/switch_1/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X80 gnd ro_complete_0/a3 ro_complete_0/cbank_1/switch_3/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X81 gnd ro_complete_0/a2 ro_complete_0/cbank_1/switch_2/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X82 gnd ro_complete_0/a4 ro_complete_0/cbank_1/switch_4/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X83 gnd ro_complete_0/a5 ro_complete_0/cbank_1/switch_5/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X84 ro_complete_0/cbank_1/v ro_complete_0/cbank_1/switch_3/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X85 ro_complete_0/cbank_1/v gnd sky130_fd_pr__cap_mim_m3_1 l=5e+06u w=5.2e+06u
+X86 ro_complete_0/cbank_1/v ro_complete_0/cbank_1/switch_5/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X87 ro_complete_0/cbank_1/v ro_complete_0/cbank_1/switch_4/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X88 ro_complete_0/cbank_1/v ro_complete_0/cbank_1/switch_0/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X89 ro_complete_0/cbank_1/v ro_complete_0/cbank_1/switch_1/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X90 ro_complete_0/cbank_1/v ro_complete_0/cbank_1/switch_2/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X91 gnd ro_complete_0/a0 ro_complete_0/cbank_2/switch_0/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X92 gnd ro_complete_0/a1 ro_complete_0/cbank_2/switch_1/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X93 gnd ro_complete_0/a3 ro_complete_0/cbank_2/switch_3/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X94 gnd ro_complete_0/a2 ro_complete_0/cbank_2/switch_2/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X95 gnd ro_complete_0/a4 ro_complete_0/cbank_2/switch_4/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X96 gnd ro_complete_0/a5 ro_complete_0/cbank_2/switch_5/vin gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=7.2e+06u l=350000u
+X97 vco ro_complete_0/cbank_2/switch_3/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X98 vco gnd sky130_fd_pr__cap_mim_m3_1 l=5e+06u w=5.2e+06u
+X99 vco ro_complete_0/cbank_2/switch_5/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X100 vco ro_complete_0/cbank_2/switch_4/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X101 vco ro_complete_0/cbank_2/switch_0/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X102 vco ro_complete_0/cbank_2/switch_1/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X103 vco ro_complete_0/cbank_2/switch_2/vin sky130_fd_pr__cap_mim_m3_1 l=2.8e+06u w=2.8e+06u
+X104 divider_0/and_0/A divider_0/nor_0/B gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X105 divider_0/and_0/A divider_0/nor_0/A gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X106 divider_0/nor_0/Z1 divider_0/nor_0/A vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4.5e+06u l=150000u
+X107 divider_0/and_0/A divider_0/nor_0/B divider_0/nor_0/Z1 vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4.5e+06u l=150000u
+X108 divider_0/and_0/B divider_0/nor_1/B gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X109 divider_0/and_0/B divider_0/mc2 gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X110 divider_0/nor_1/Z1 divider_0/mc2 vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4.5e+06u l=150000u
+X111 divider_0/and_0/B divider_0/nor_1/B divider_0/nor_1/Z1 vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4.5e+06u l=150000u
+X112 divider_0/prescaler_0/tspc_0/Z3 divider_0/prescaler_0/tspc_0/Z2 divider_0/prescaler_0/tspc_0/Z4 gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X113 divider_0/prescaler_0/tspc_0/Z4 vco gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X114 divider_0/prescaler_0/tspc_0/Z1 divider_0/prescaler_0/tspc_0/D vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.8e+06u l=150000u
+X115 divider_0/prescaler_0/tspc_0/Z2 divider_0/prescaler_0/tspc_0/D gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=450000u l=150000u
+X116 divider_0/prescaler_0/Out divider_0/prescaler_0/tspc_0/a_740_n680# vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4e+06u l=150000u
+X117 divider_0/prescaler_0/tspc_0/a_740_n680# divider_0/prescaler_0/tspc_0/Z3 vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
+X118 divider_0/prescaler_0/tspc_0/Z2 vco divider_0/prescaler_0/tspc_0/Z1 vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.8e+06u l=150000u
+X119 divider_0/prescaler_0/Out divider_0/prescaler_0/tspc_0/a_740_n680# gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X120 divider_0/prescaler_0/tspc_0/a_740_n680# vco divider_0/prescaler_0/tspc_0/a_630_n680# gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X121 divider_0/prescaler_0/tspc_0/a_630_n680# divider_0/prescaler_0/tspc_0/Z3 gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X122 divider_0/prescaler_0/tspc_0/Z3 vco vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.9e+06u l=150000u
+X123 divider_0/prescaler_0/tspc_1/Z3 divider_0/prescaler_0/tspc_1/Z2 divider_0/prescaler_0/tspc_1/Z4 gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X124 divider_0/prescaler_0/tspc_1/Z4 vco gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X125 divider_0/prescaler_0/tspc_1/Z1 divider_0/prescaler_0/Out vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.8e+06u l=150000u
+X126 divider_0/prescaler_0/tspc_1/Z2 divider_0/prescaler_0/Out gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=450000u l=150000u
+X127 divider_0/prescaler_0/tspc_1/Q divider_0/prescaler_0/m1_2700_2190# vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4e+06u l=150000u
+X128 divider_0/prescaler_0/m1_2700_2190# divider_0/prescaler_0/tspc_1/Z3 vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
+X129 divider_0/prescaler_0/tspc_1/Z2 vco divider_0/prescaler_0/tspc_1/Z1 vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.8e+06u l=150000u
+X130 divider_0/prescaler_0/tspc_1/Q divider_0/prescaler_0/m1_2700_2190# gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X131 divider_0/prescaler_0/m1_2700_2190# vco divider_0/prescaler_0/tspc_1/a_630_n680# gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X132 divider_0/prescaler_0/tspc_1/a_630_n680# divider_0/prescaler_0/tspc_1/Z3 gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X133 divider_0/prescaler_0/tspc_1/Z3 vco vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.9e+06u l=150000u
+X134 divider_0/prescaler_0/tspc_2/Z3 divider_0/prescaler_0/tspc_2/Z2 divider_0/prescaler_0/tspc_2/Z4 gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X135 divider_0/prescaler_0/tspc_2/Z4 vco gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X136 divider_0/prescaler_0/tspc_2/Z1 divider_0/prescaler_0/tspc_2/D vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.8e+06u l=150000u
+X137 divider_0/prescaler_0/tspc_2/Z2 divider_0/prescaler_0/tspc_2/D gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=450000u l=150000u
+X138 divider_0/prescaler_0/tspc_2/Q divider_0/prescaler_0/tspc_2/a_740_n680# vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4e+06u l=150000u
+X139 divider_0/prescaler_0/tspc_2/a_740_n680# divider_0/prescaler_0/tspc_2/Z3 vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
+X140 divider_0/prescaler_0/tspc_2/Z2 vco divider_0/prescaler_0/tspc_2/Z1 vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.8e+06u l=150000u
+X141 divider_0/prescaler_0/tspc_2/Q divider_0/prescaler_0/tspc_2/a_740_n680# gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X142 divider_0/prescaler_0/tspc_2/a_740_n680# vco divider_0/prescaler_0/tspc_2/a_630_n680# gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X143 divider_0/prescaler_0/tspc_2/a_630_n680# divider_0/prescaler_0/tspc_2/Z3 gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X144 divider_0/prescaler_0/tspc_2/Z3 vco vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.9e+06u l=150000u
+X145 divider_0/prescaler_0/tspc_0/D divider_0/prescaler_0/tspc_2/Q vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X146 divider_0/prescaler_0/tspc_0/D divider_0/prescaler_0/tspc_1/Q vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X147 divider_0/prescaler_0/nand_0/z1 divider_0/prescaler_0/tspc_2/Q gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X148 divider_0/prescaler_0/tspc_0/D divider_0/prescaler_0/tspc_1/Q divider_0/prescaler_0/nand_0/z1 gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X149 divider_0/prescaler_0/tspc_2/D divider_0/and_0/OUT vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X150 divider_0/prescaler_0/tspc_2/D divider_0/prescaler_0/m1_2700_2190# vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X151 divider_0/prescaler_0/nand_1/z1 divider_0/and_0/OUT gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X152 divider_0/prescaler_0/tspc_2/D divider_0/prescaler_0/m1_2700_2190# divider_0/prescaler_0/nand_1/z1 gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X153 divider_0/tspc_0/Z3 divider_0/tspc_0/Z2 divider_0/tspc_0/Z4 divider_0/tspc_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X154 divider_0/tspc_0/Z4 divider_0/prescaler_0/Out gnd divider_0/tspc_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X155 divider_0/tspc_0/Z1 divider_0/nor_0/A vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.8e+06u l=150000u
+X156 divider_0/tspc_0/Z2 divider_0/nor_0/A gnd divider_0/tspc_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=450000u l=150000u
+X157 divider_0/tspc_0/Q divider_0/nor_0/A vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4e+06u l=150000u
+X158 divider_0/nor_0/A divider_0/tspc_0/Z3 vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
+X159 divider_0/tspc_0/Z2 divider_0/prescaler_0/Out divider_0/tspc_0/Z1 vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.8e+06u l=150000u
+X160 divider_0/tspc_0/Q divider_0/nor_0/A gnd divider_0/tspc_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X161 divider_0/nor_0/A divider_0/prescaler_0/Out divider_0/tspc_0/a_630_n680# divider_0/tspc_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X162 divider_0/tspc_0/a_630_n680# divider_0/tspc_0/Z3 gnd divider_0/tspc_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X163 divider_0/tspc_0/Z3 divider_0/prescaler_0/Out vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.9e+06u l=150000u
+X164 divider_0/tspc_1/Z3 divider_0/tspc_1/Z2 divider_0/tspc_1/Z4 gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X165 divider_0/tspc_1/Z4 divider_0/tspc_0/Q gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X166 divider_0/tspc_1/Z1 divider_0/nor_0/B vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.8e+06u l=150000u
+X167 divider_0/tspc_1/Z2 divider_0/nor_0/B gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=450000u l=150000u
+X168 divider_0/tspc_1/Q divider_0/nor_0/B vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4e+06u l=150000u
+X169 divider_0/nor_0/B divider_0/tspc_1/Z3 vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
+X170 divider_0/tspc_1/Z2 divider_0/tspc_0/Q divider_0/tspc_1/Z1 vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.8e+06u l=150000u
+X171 divider_0/tspc_1/Q divider_0/nor_0/B gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X172 divider_0/nor_0/B divider_0/tspc_0/Q divider_0/tspc_1/a_630_n680# gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X173 divider_0/tspc_1/a_630_n680# divider_0/tspc_1/Z3 gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X174 divider_0/tspc_1/Z3 divider_0/tspc_0/Q vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.9e+06u l=150000u
+X175 divider_0/tspc_2/Z3 divider_0/tspc_2/Z2 divider_0/tspc_2/Z4 gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X176 divider_0/tspc_2/Z4 divider_0/tspc_1/Q gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X177 divider_0/tspc_2/Z1 divider_0/nor_1/B vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.8e+06u l=150000u
+X178 divider_0/tspc_2/Z2 divider_0/nor_1/B gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=450000u l=150000u
+X179 div divider_0/nor_1/B vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4e+06u l=150000u
+X180 divider_0/nor_1/B divider_0/tspc_2/Z3 vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
+X181 divider_0/tspc_2/Z2 divider_0/tspc_1/Q divider_0/tspc_2/Z1 vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.8e+06u l=150000u
+X182 div divider_0/nor_1/B gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X183 divider_0/nor_1/B divider_0/tspc_1/Q divider_0/tspc_2/a_630_n680# gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X184 divider_0/tspc_2/a_630_n680# divider_0/tspc_2/Z3 gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X185 divider_0/tspc_2/Z3 divider_0/tspc_1/Q vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.9e+06u l=150000u
+X186 divider_0/and_0/OUT divider_0/and_0/out1 vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=3.8e+06u l=150000u
+X187 divider_0/and_0/Z1 divider_0/and_0/A gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X188 divider_0/and_0/out1 divider_0/and_0/A vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.6e+06u l=150000u
+X189 divider_0/and_0/out1 divider_0/and_0/B divider_0/and_0/Z1 gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X190 divider_0/and_0/OUT divider_0/and_0/out1 gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
+X191 divider_0/and_0/out1 divider_0/and_0/B vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.6e+06u l=150000u
+C0 divider_0/and_0/OUT vco 0.06fF
+C1 div vco 2.26fF
+C2 divider_0/and_0/out1 divider_0/and_0/Z1 0.36fF
+C3 pd_0/tspc_r_0/Z3 pd_0/tspc_r_0/Z1 0.09fF
+C4 ref pd_0/tspc_r_0/Z2 0.19fF
+C5 divider_0/prescaler_0/tspc_0/Z2 divider_0/prescaler_0/tspc_0/Z3 0.16fF
+C6 ro_complete_0/cbank_1/switch_5/vin ro_complete_0/a4 0.12fF
+C7 divider_0/tspc_0/a_630_n680# divider_0/nor_0/B 0.01fF
+C8 divider_0/prescaler_0/tspc_1/Z1 divider_0/prescaler_0/Out 0.08fF
+C9 pd_0/tspc_r_0/Qbar pd_0/R 0.03fF
+C10 divider_0/prescaler_0/tspc_0/Z4 divider_0/prescaler_0/tspc_1/Q 0.21fF
+C11 divider_0/prescaler_0/tspc_0/Z3 divider_0/prescaler_0/Out 0.05fF
+C12 divider_0/nor_0/B divider_0/tspc_2/Z4 0.02fF
+C13 divider_0/prescaler_0/tspc_2/a_630_n680# vco 0.01fF
+C14 pd_0/R pd_0/and_pd_0/Out1 0.33fF
+C15 ro_complete_0/cbank_1/switch_3/vin ro_complete_0/a2 0.14fF
+C16 divider_0/prescaler_0/tspc_1/Z4 divider_0/prescaler_0/tspc_1/a_630_n680# 0.12fF
+C17 divider_0/tspc_0/Z3 divider_0/tspc_0/Z4 0.65fF
+C18 divider_0/prescaler_0/tspc_2/Z3 divider_0/prescaler_0/tspc_2/Z4 0.65fF
+C19 ro_complete_0/a4 vco 0.01fF
+C20 div pd_0/tspc_r_1/Z4 0.02fF
+C21 divider_0/tspc_1/Z1 divider_0/tspc_1/Z4 0.00fF
+C22 divider_0/nor_0/B divider_0/tspc_1/a_630_n680# 0.35fF
+C23 pd_0/tspc_r_1/Qbar1 pd_0/tspc_r_1/z5 0.20fF
+C24 divider_0/prescaler_0/tspc_1/Z1 divider_0/prescaler_0/tspc_1/Z2 1.07fF
+C25 divider_0/prescaler_0/m1_2700_2190# divider_0/prescaler_0/tspc_1/Z4 0.08fF
+C26 divider_0/tspc_2/Z1 divider_0/tspc_2/Z3 0.06fF
+C27 divider_0/nor_1/B divider_0/tspc_2/Z4 0.22fF
+C28 ro_complete_0/cbank_1/switch_1/vin ro_complete_0/cbank_1/v 1.30fF
+C29 divider_0/prescaler_0/tspc_0/a_630_n680# vco 0.01fF
+C30 divider_0/prescaler_0/tspc_0/Z3 divider_0/prescaler_0/tspc_1/Q 0.13fF
+C31 ro_complete_0/cbank_1/switch_5/vin ro_complete_0/cbank_1/v 1.45fF
+C32 divider_0/prescaler_0/tspc_2/Q divider_0/prescaler_0/tspc_1/Q 0.19fF
+C33 divider_0/nor_0/B divider_0/nor_1/Z1 0.18fF
+C34 divider_0/prescaler_0/tspc_0/Z2 vco 0.11fF
+C35 divider_0/tspc_1/a_630_n680# divider_0/nor_1/B 0.00fF
+C36 divider_0/and_0/B divider_0/and_0/OUT 0.01fF
+C37 ro_complete_0/cbank_0/switch_2/vin ro_complete_0/cbank_0/v 1.30fF
+C38 ro_complete_0/a0 ro_complete_0/cbank_0/switch_0/vin 0.09fF
+C39 divider_0/prescaler_0/Out vco 0.51fF
+C40 ro_complete_0/cbank_0/v ro_complete_0/cbank_0/switch_0/vin 1.30fF
+C41 divider_0/tspc_0/Z3 divider_0/tspc_0/a_630_n680# 0.05fF
+C42 divider_0/prescaler_0/tspc_2/Z3 divider_0/prescaler_0/tspc_2/a_630_n680# 0.05fF
+C43 ro_complete_0/cbank_1/v vco 1.36fF
+C44 pd_0/UP pd_0/DOWN 4.58fF
+C45 pd_0/tspc_r_0/Z4 pd_0/tspc_r_0/z5 0.04fF
+C46 ro_complete_0/cbank_1/v ro_complete_0/a5 0.08fF
+C47 ro_complete_0/cbank_2/switch_4/vin ro_complete_0/cbank_2/switch_5/vin 0.19fF
+C48 divider_0/tspc_1/Z3 divider_0/tspc_1/Z4 0.65fF
+C49 divider_0/nor_1/B divider_0/nor_1/Z1 0.06fF
+C50 ro_complete_0/cbank_1/switch_3/vin ro_complete_0/cbank_1/switch_4/vin 0.20fF
+C51 divider_0/prescaler_0/m1_2700_2190# divider_0/prescaler_0/tspc_1/a_630_n680# 0.19fF
+C52 divider_0/prescaler_0/tspc_1/Z1 divider_0/prescaler_0/tspc_1/Z3 0.06fF
+C53 divider_0/tspc_2/Z1 divider_0/tspc_2/Z4 0.00fF
+C54 divider_0/nor_1/B divider_0/tspc_2/a_630_n680# 0.35fF
+C55 div pd_0/tspc_r_1/Z3 0.65fF
+C56 ref pd_0/tspc_r_0/Z4 0.02fF
+C57 pd_0/UP pd_0/tspc_r_0/Qbar 0.21fF
+C58 divider_0/prescaler_0/tspc_1/Z2 vco 0.11fF
+C59 divider_0/tspc_0/Z2 divider_0/prescaler_0/Out 0.11fF
+C60 pd_0/UP pd_0/and_pd_0/Out1 0.33fF
+C61 pd_0/tspc_r_1/Z3 pd_0/DOWN 0.03fF
+C62 divider_0/prescaler_0/tspc_1/Q vco 0.60fF
+C63 pd_0/R pd_0/and_pd_0/Z1 0.02fF
+C64 ro_complete_0/a3 ro_complete_0/cbank_2/switch_3/vin 0.09fF
+C65 ro_complete_0/a3 vco 0.11fF
+C66 ro_complete_0/cbank_1/switch_2/vin ro_complete_0/cbank_1/v 1.30fF
+C67 divider_0/tspc_0/Z4 divider_0/tspc_0/a_630_n680# 0.12fF
+C68 divider_0/nor_0/A divider_0/tspc_0/Q 0.55fF
+C69 divider_0/prescaler_0/tspc_2/Z4 divider_0/prescaler_0/tspc_2/a_630_n680# 0.12fF
+C70 div divider_0/gnd 1.69fF
+C71 ref pd_0/R 0.61fF
+C72 divider_0/tspc_1/Z3 divider_0/tspc_1/a_630_n680# 0.05fF
+C73 div divider_0/and_0/OUT 0.01fF
+C74 divider_0/mc2 vco 0.02fF
+C75 divider_0/tspc_2/Z3 divider_0/tspc_2/Z4 0.65fF
+C76 divider_0/prescaler_0/tspc_1/Z1 divider_0/prescaler_0/tspc_1/Z4 0.00fF
+C77 divider_0/nor_0/A divider_0/tspc_0/Z2 0.23fF
+C78 divider_0/prescaler_0/tspc_2/D divider_0/prescaler_0/tspc_2/Z2 0.09fF
+C79 ro_complete_0/a1 vco 0.11fF
+C80 pd_0/tspc_r_0/Z3 pd_0/tspc_r_0/z5 0.11fF
+C81 ro_complete_0/a2 ro_complete_0/cbank_1/v 0.05fF
+C82 divider_0/nor_0/B divider_0/tspc_0/Q 0.22fF
+C83 divider_0/prescaler_0/tspc_2/Q divider_0/prescaler_0/nand_0/z1 0.01fF
+C84 divider_0/prescaler_0/tspc_1/Z3 vco 0.45fF
+C85 pd_0/tspc_r_1/Z3 pd_0/tspc_r_1/Z1 0.09fF
+C86 divider_0/prescaler_0/tspc_0/Z2 divider_0/prescaler_0/tspc_0/D 0.09fF
+C87 divider_0/prescaler_0/tspc_0/a_740_n680# divider_0/prescaler_0/tspc_0/a_630_n680# 0.19fF
+C88 ro_complete_0/cbank_0/switch_3/vin ro_complete_0/a2 0.14fF
+C89 ro_complete_0/cbank_1/switch_3/vin ro_complete_0/cbank_1/v 1.30fF
+C90 ro_complete_0/cbank_0/switch_4/vin ro_complete_0/cbank_0/v 1.30fF
+C91 ref pd_0/tspc_r_0/Z3 0.65fF
+C92 ro_complete_0/a0 ro_complete_0/cbank_2/switch_0/vin 0.09fF
+C93 ro_complete_0/cbank_1/switch_4/vin ro_complete_0/a4 0.09fF
+C94 divider_0/nor_0/A divider_0/tspc_1/Z2 0.15fF
+C95 ro_complete_0/cbank_2/switch_5/vin vco 1.58fF
+C96 pd_0/tspc_r_0/Qbar pd_0/DOWN 0.02fF
+C97 pd_0/tspc_r_0/Qbar1 pd_0/R 0.30fF
+C98 filter_0/a_4216_n5230# vco 1.58fF
+C99 ro_complete_0/a5 ro_complete_0/cbank_2/switch_5/vin 0.09fF
+C100 ro_complete_0/cbank_1/v ro_complete_0/cbank_1/switch_0/vin 1.30fF
+C101 divider_0/nor_0/A divider_0/and_0/B 0.08fF
+C102 divider_0/tspc_1/Z4 divider_0/tspc_1/a_630_n680# 0.12fF
+C103 divider_0/nor_0/B divider_0/tspc_1/Q 0.51fF
+C104 divider_0/prescaler_0/tspc_2/Z2 vco 0.11fF
+C105 pd_0/DOWN pd_0/and_pd_0/Out1 0.12fF
+C106 divider_0/prescaler_0/tspc_0/a_740_n680# divider_0/prescaler_0/Out 0.21fF
+C107 divider_0/tspc_2/Z3 divider_0/tspc_2/a_630_n680# 0.05fF
+C108 ro_complete_0/cbank_1/switch_2/vin ro_complete_0/a1 0.14fF
+C109 divider_0/tspc_0/Z1 divider_0/tspc_0/Z2 1.07fF
+C110 divider_0/prescaler_0/tspc_2/Z1 divider_0/prescaler_0/tspc_2/Z2 1.07fF
+C111 div pd_0/tspc_r_1/Z1 0.17fF
+C112 divider_0/and_0/B divider_0/nor_0/Z1 0.18fF
+C113 pd_0/UP pd_0/tspc_r_0/z5 0.03fF
+C114 divider_0/prescaler_0/tspc_0/Z2 divider_0/and_0/OUT 0.06fF
+C115 divider_0/tspc_0/Q divider_0/tspc_1/Z1 0.01fF
+C116 divider_0/nor_0/B divider_0/tspc_1/Z2 0.30fF
+C117 divider_0/prescaler_0/tspc_1/Z4 vco 0.12fF
+C118 pd_0/tspc_r_0/Qbar pd_0/and_pd_0/Out1 0.05fF
+C119 pd_0/UP pd_0/and_pd_0/Z1 0.06fF
+C120 ro_complete_0/cbank_1/switch_3/vin ro_complete_0/a3 0.09fF
+C121 divider_0/prescaler_0/tspc_0/D divider_0/prescaler_0/tspc_1/Q 0.32fF
+C122 divider_0/nor_0/B divider_0/and_0/B 0.31fF
+C123 divider_0/nor_1/B divider_0/tspc_1/Q 0.22fF
+C124 divider_0/and_0/B divider_0/mc2 0.20fF
+C125 divider_0/and_0/out1 divider_0/and_0/B 0.18fF
+C126 pd_0/tspc_r_0/Z3 pd_0/tspc_r_0/Qbar1 0.38fF
+C127 divider_0/prescaler_0/tspc_0/a_740_n680# divider_0/prescaler_0/tspc_1/Z2 0.01fF
+C128 ro_complete_0/cbank_1/switch_4/vin ro_complete_0/cbank_1/v 1.30fF
+C129 divider_0/tspc_0/Z3 divider_0/tspc_0/Q 0.05fF
+C130 divider_0/prescaler_0/tspc_0/Z1 divider_0/prescaler_0/tspc_0/Z4 0.00fF
+C131 divider_0/prescaler_0/tspc_0/a_740_n680# divider_0/prescaler_0/tspc_1/Q 0.15fF
+C132 divider_0/nor_0/B divider_0/tspc_2/Z2 0.20fF
+C133 pd_0/tspc_r_1/Z4 pd_0/tspc_r_1/z5 0.04fF
+C134 ro_complete_0/cbank_0/switch_4/vin ro_complete_0/cbank_0/switch_5/vin 0.19fF
+C135 divider_0/prescaler_0/m1_2700_2190# divider_0/prescaler_0/tspc_2/D 0.16fF
+C136 divider_0/nor_0/A divider_0/gnd 0.05fF
+C137 divider_0/tspc_2/Z4 divider_0/tspc_2/a_630_n680# 0.12fF
+C138 divider_0/nor_1/B divider_0/and_0/B 0.29fF
+C139 ro_complete_0/cbank_2/switch_3/vin ro_complete_0/cbank_2/switch_2/vin 0.20fF
+C140 divider_0/tspc_0/Z2 divider_0/tspc_0/Z3 0.16fF
+C141 divider_0/prescaler_0/tspc_1/Z2 divider_0/and_0/OUT 0.06fF
+C142 divider_0/prescaler_0/m1_2700_2190# divider_0/prescaler_0/nand_1/z1 0.07fF
+C143 divider_0/prescaler_0/tspc_2/Z2 divider_0/prescaler_0/tspc_2/Z3 0.16fF
+C144 ro_complete_0/cbank_2/switch_2/vin vco 1.46fF
+C145 pd_0/tspc_r_0/Z2 pd_0/tspc_r_0/Z4 0.14fF
+C146 ro_complete_0/a4 ro_complete_0/cbank_1/v 0.05fF
+C147 divider_0/tspc_1/Z1 divider_0/tspc_1/Z2 1.07fF
+C148 divider_0/tspc_0/Q divider_0/tspc_1/Z3 0.45fF
+C149 divider_0/prescaler_0/tspc_1/a_630_n680# vco 0.01fF
+C150 div divider_0/prescaler_0/tspc_1/Q 0.03fF
+C151 pd_0/tspc_r_1/Qbar1 pd_0/R 0.01fF
+C152 pd_0/DOWN pd_0/tspc_r_1/Qbar 0.21fF
+C153 divider_0/prescaler_0/tspc_0/Z2 divider_0/prescaler_0/tspc_0/a_630_n680# 0.01fF
+C154 divider_0/tspc_1/Q divider_0/tspc_2/Z1 0.01fF
+C155 divider_0/nor_1/B divider_0/tspc_2/Z2 0.40fF
+C156 ro_complete_0/a3 ro_complete_0/cbank_1/switch_4/vin 0.13fF
+C157 ro_complete_0/cbank_0/switch_5/vin ro_complete_0/cbank_0/v 1.30fF
+C158 ro_complete_0/cbank_0/switch_2/vin ro_complete_0/a2 0.09fF
+C159 divider_0/prescaler_0/tspc_0/a_630_n680# divider_0/prescaler_0/Out 0.04fF
+C160 divider_0/and_0/A divider_0/and_0/B 0.18fF
+C161 divider_0/gnd divider_0/mc2 0.03fF
+C162 ref pd_0/tspc_r_0/Z1 0.17fF
+C163 pd_0/tspc_r_0/Qbar1 pd_0/UP 0.11fF
+C164 divider_0/prescaler_0/tspc_0/Z1 divider_0/prescaler_0/tspc_0/Z3 0.06fF
+C165 ro_complete_0/cbank_2/switch_1/vin ro_complete_0/cbank_2/switch_2/vin 0.20fF
+C166 divider_0/prescaler_0/m1_2700_2190# vco 0.01fF
+C167 pd_0/tspc_r_0/Z2 pd_0/R 0.21fF
+C168 divider_0/prescaler_0/tspc_0/Z3 divider_0/prescaler_0/tspc_0/Z4 0.65fF
+C169 ro_complete_0/a0 ro_complete_0/cbank_1/switch_1/vin 0.13fF
+C170 divider_0/mc2 divider_0/and_0/OUT 0.05fF
+C171 divider_0/tspc_1/Z3 divider_0/tspc_1/Q 0.05fF
+C172 div divider_0/mc2 0.01fF
+C173 divider_0/and_0/out1 divider_0/and_0/OUT 0.31fF
+C174 pd_0/DOWN pd_0/and_pd_0/Z1 0.06fF
+C175 divider_0/tspc_0/Z2 divider_0/tspc_0/Z4 0.36fF
+C176 divider_0/prescaler_0/tspc_2/Z2 divider_0/prescaler_0/tspc_2/Z4 0.36fF
+C177 divider_0/prescaler_0/tspc_2/a_740_n680# divider_0/prescaler_0/tspc_2/Q 0.20fF
+C178 ref pd_0/DOWN 1.48fF
+C179 cp_0/down cp_0/upbar 0.02fF
+C180 divider_0/mc2 divider_0/prescaler_0/tspc_2/a_630_n680# 0.33fF
+C181 divider_0/tspc_0/Q divider_0/tspc_1/Z4 0.15fF
+C182 divider_0/tspc_1/Z2 divider_0/tspc_1/Z3 0.16fF
+C183 ro_complete_0/cbank_2/switch_0/vin vco 1.46fF
+C184 pd_0/tspc_r_0/Qbar pd_0/and_pd_0/Z1 0.02fF
+C185 pd_0/tspc_r_1/Z3 pd_0/tspc_r_1/z5 0.11fF
+C186 divider_0/tspc_2/Z1 divider_0/tspc_2/Z2 1.07fF
+C187 divider_0/tspc_1/Q divider_0/tspc_2/Z3 0.45fF
+C188 divider_0/nor_1/B div 0.27fF
+C189 divider_0/prescaler_0/tspc_0/D divider_0/prescaler_0/nand_0/z1 0.21fF
+C190 ro_complete_0/a0 vco 0.11fF
+C191 pd_0/and_pd_0/Out1 pd_0/and_pd_0/Z1 0.18fF
+C192 ro_complete_0/cbank_0/v vco 1.27fF
+C193 pd_0/tspc_r_0/Z3 pd_0/tspc_r_0/Z2 0.25fF
+C194 divider_0/prescaler_0/tspc_0/Z2 divider_0/prescaler_0/tspc_1/Q 0.06fF
+C195 divider_0/prescaler_0/tspc_0/a_740_n680# divider_0/prescaler_0/tspc_1/Z4 0.01fF
+C196 ro_complete_0/a2 ro_complete_0/cbank_2/switch_2/vin 0.09fF
+C197 divider_0/tspc_0/a_630_n680# divider_0/tspc_0/Q 0.04fF
+C198 divider_0/prescaler_0/tspc_2/Z2 divider_0/and_0/OUT 0.05fF
+C199 divider_0/prescaler_0/tspc_1/Z2 divider_0/prescaler_0/Out 0.19fF
+C200 divider_0/nor_0/A divider_0/prescaler_0/Out 0.15fF
+C201 cp_0/down cp_0/a_1710_0# 0.32fF
+C202 ro_complete_0/cbank_0/switch_1/vin ro_complete_0/cbank_0/switch_2/vin 0.20fF
+C203 ro_complete_0/cbank_2/switch_1/vin ro_complete_0/cbank_2/switch_0/vin 0.20fF
+C204 divider_0/prescaler_0/tspc_1/Q divider_0/prescaler_0/Out 0.91fF
+C205 ro_complete_0/cbank_0/switch_1/vin ro_complete_0/cbank_0/switch_0/vin 0.20fF
+C206 divider_0/prescaler_0/tspc_0/Z4 vco 0.12fF
+C207 ro_complete_0/a3 ro_complete_0/cbank_1/v 0.05fF
+C208 ro_complete_0/cbank_2/switch_3/vin ro_complete_0/cbank_2/switch_4/vin 0.20fF
+C209 divider_0/tspc_0/Z2 divider_0/tspc_0/a_630_n680# 0.01fF
+C210 divider_0/prescaler_0/tspc_2/Z2 divider_0/prescaler_0/tspc_2/a_630_n680# 0.01fF
+C211 ro_complete_0/cbank_2/switch_4/vin vco 1.46fF
+C212 div pd_0/tspc_r_1/z5 0.04fF
+C213 divider_0/tspc_1/Z2 divider_0/tspc_1/Z4 0.36fF
+C214 divider_0/tspc_0/Q divider_0/tspc_1/a_630_n680# 0.01fF
+C215 divider_0/prescaler_0/tspc_2/a_740_n680# vco 0.01fF
+C216 pd_0/DOWN pd_0/tspc_r_1/z5 0.03fF
+C217 pd_0/tspc_r_1/Z2 pd_0/R 0.21fF
+C218 ro_complete_0/cbank_0/switch_3/vin ro_complete_0/a3 0.09fF
+C219 divider_0/tspc_1/Q divider_0/tspc_2/Z4 0.15fF
+C220 divider_0/tspc_2/Z2 divider_0/tspc_2/Z3 0.16fF
+C221 divider_0/prescaler_0/tspc_1/Z2 divider_0/prescaler_0/tspc_1/Q 0.06fF
+C222 divider_0/and_0/B divider_0/and_0/Z1 0.07fF
+C223 divider_0/nor_0/A divider_0/prescaler_0/tspc_1/Q 0.03fF
+C224 pd_0/tspc_r_0/Qbar1 pd_0/tspc_r_0/Qbar 0.01fF
+C225 ro_complete_0/a1 ro_complete_0/cbank_1/v 0.05fF
+C226 divider_0/prescaler_0/tspc_2/D divider_0/prescaler_0/nand_1/z1 0.24fF
+C227 divider_0/prescaler_0/tspc_1/Z3 divider_0/prescaler_0/Out 0.11fF
+C228 pd_0/tspc_r_1/Z3 pd_0/tspc_r_1/Qbar1 0.38fF
+C229 divider_0/prescaler_0/tspc_0/Z3 vco 0.64fF
+C230 divider_0/tspc_1/a_630_n680# divider_0/tspc_1/Q 0.04fF
+C231 divider_0/prescaler_0/tspc_2/Q vco 0.05fF
+C232 ro_complete_0/cbank_0/switch_5/vin ro_complete_0/a5 0.09fF
+C233 divider_0/nor_0/A divider_0/nor_0/B 1.21fF
+C234 divider_0/nor_0/A divider_0/mc2 0.04fF
+C235 divider_0/tspc_1/Z2 divider_0/tspc_1/a_630_n680# 0.01fF
+C236 divider_0/prescaler_0/tspc_2/D vco 0.26fF
+C237 pd_0/tspc_r_1/Z2 pd_0/tspc_r_1/Z4 0.14fF
+C238 divider_0/prescaler_0/tspc_1/Z2 divider_0/prescaler_0/tspc_1/Z3 0.16fF
+C239 divider_0/tspc_2/Z2 divider_0/tspc_2/Z4 0.36fF
+C240 divider_0/tspc_1/Q divider_0/tspc_2/a_630_n680# 0.01fF
+C241 divider_0/tspc_2/Z3 div 0.05fF
+C242 divider_0/nor_0/B divider_0/nor_0/Z1 0.06fF
+C243 ro_complete_0/a0 ro_complete_0/cbank_1/switch_0/vin 0.09fF
+C244 divider_0/nor_0/A divider_0/tspc_0/Z1 0.03fF
+C245 divider_0/prescaler_0/m1_2700_2190# divider_0/and_0/OUT 0.14fF
+C246 divider_0/prescaler_0/tspc_2/D divider_0/prescaler_0/tspc_2/Z1 0.15fF
+C247 divider_0/prescaler_0/tspc_2/a_740_n680# divider_0/prescaler_0/tspc_2/Z3 0.33fF
+C248 divider_0/prescaler_0/tspc_1/Z3 divider_0/prescaler_0/tspc_1/Q 0.21fF
+C249 div pd_0/tspc_r_1/Qbar1 0.12fF
+C250 pd_0/tspc_r_0/Z3 pd_0/tspc_r_0/Z4 0.20fF
+C251 ref pd_0/tspc_r_0/z5 0.04fF
+C252 pd_0/tspc_r_0/Z1 pd_0/tspc_r_0/Z2 0.71fF
+C253 ro_complete_0/cbank_1/switch_5/vin ro_complete_0/a5 0.09fF
+C254 divider_0/prescaler_0/tspc_1/Z4 divider_0/prescaler_0/Out 0.28fF
+C255 divider_0/nor_0/B divider_0/mc2 0.06fF
+C256 divider_0/tspc_0/Z3 divider_0/prescaler_0/Out 0.45fF
+C257 pd_0/tspc_r_0/Z4 pd_0/tspc_r_1/Z4 0.02fF
+C258 pd_0/tspc_r_1/Qbar1 pd_0/DOWN 0.11fF
+C259 divider_0/prescaler_0/tspc_0/Z1 divider_0/prescaler_0/tspc_0/D 0.03fF
+C260 ro_complete_0/cbank_0/switch_3/vin ro_complete_0/cbank_0/switch_2/vin 0.20fF
+C261 divider_0/and_0/out1 divider_0/mc2 0.06fF
+C262 divider_0/and_0/B divider_0/nor_1/Z1 0.78fF
+C263 divider_0/and_0/Z1 divider_0/and_0/OUT 0.04fF
+C264 divider_0/prescaler_0/tspc_0/Z4 divider_0/prescaler_0/tspc_0/D 0.11fF
+C265 ro_complete_0/cbank_2/switch_3/vin vco 1.46fF
+C266 divider_0/prescaler_0/tspc_2/Z3 divider_0/prescaler_0/tspc_2/Q 0.05fF
+C267 ro_complete_0/a5 vco 0.15fF
+C268 pd_0/tspc_r_0/Z3 pd_0/R 0.29fF
+C269 ro_complete_0/cbank_0/switch_1/vin ro_complete_0/a0 0.13fF
+C270 divider_0/nor_0/B divider_0/nor_1/B 0.47fF
+C271 divider_0/nor_0/A divider_0/and_0/A 0.01fF
+C272 divider_0/nor_1/B divider_0/mc2 0.15fF
+C273 divider_0/prescaler_0/tspc_0/a_740_n680# divider_0/prescaler_0/tspc_0/Z4 0.08fF
+C274 ro_complete_0/cbank_1/switch_1/vin ro_complete_0/cbank_1/switch_2/vin 0.20fF
+C275 ro_complete_0/cbank_0/switch_1/vin ro_complete_0/cbank_0/v 1.30fF
+C276 divider_0/prescaler_0/tspc_1/Z2 divider_0/prescaler_0/tspc_1/Z4 0.36fF
+C277 divider_0/tspc_2/Z2 divider_0/tspc_2/a_630_n680# 0.01fF
+C278 divider_0/nor_0/A divider_0/tspc_0/Z3 0.38fF
+C279 ro_complete_0/cbank_0/switch_4/vin ro_complete_0/a4 0.09fF
+C280 divider_0/prescaler_0/tspc_1/Z4 divider_0/prescaler_0/tspc_1/Q 0.16fF
+C281 divider_0/prescaler_0/tspc_2/a_740_n680# divider_0/prescaler_0/tspc_2/Z4 0.08fF
+C282 divider_0/prescaler_0/tspc_2/D divider_0/prescaler_0/tspc_2/Z3 0.05fF
+C283 ro_complete_0/cbank_2/switch_1/vin vco 1.46fF
+C284 divider_0/and_0/A divider_0/nor_0/Z1 0.80fF
+C285 pd_0/tspc_r_0/Qbar1 pd_0/tspc_r_0/z5 0.20fF
+C286 divider_0/nor_0/B divider_0/tspc_1/Z1 0.03fF
+C287 divider_0/prescaler_0/tspc_1/Q divider_0/prescaler_0/nand_0/z1 0.22fF
+C288 divider_0/tspc_0/Z4 divider_0/prescaler_0/Out 0.12fF
+C289 pd_0/tspc_r_0/z5 pd_0/tspc_r_1/z5 0.02fF
+C290 pd_0/tspc_r_1/Z3 pd_0/tspc_r_1/Z2 0.25fF
+C291 divider_0/prescaler_0/tspc_0/Z3 divider_0/prescaler_0/tspc_0/D 0.05fF
+C292 divider_0/prescaler_0/tspc_0/D divider_0/prescaler_0/tspc_2/Q 0.04fF
+C293 divider_0/nor_0/B divider_0/and_0/A 0.26fF
+C294 divider_0/and_0/A divider_0/mc2 0.16fF
+C295 ro_complete_0/cbank_0/switch_2/vin ro_complete_0/a1 0.14fF
+C296 divider_0/and_0/out1 divider_0/and_0/A 0.01fF
+C297 ref pd_0/tspc_r_0/Qbar1 0.12fF
+C298 divider_0/prescaler_0/m1_2700_2190# divider_0/prescaler_0/Out 0.11fF
+C299 pd_0/UP pd_0/R 0.46fF
+C300 divider_0/prescaler_0/tspc_0/Z3 divider_0/prescaler_0/tspc_0/a_740_n680# 0.33fF
+C301 divider_0/prescaler_0/tspc_2/Z3 vco 0.45fF
+C302 pd_0/DOWN cp_0/a_1710_0# 0.04fF
+C303 divider_0/prescaler_0/tspc_1/Z2 divider_0/prescaler_0/tspc_1/a_630_n680# 0.01fF
+C304 divider_0/prescaler_0/tspc_1/Z3 divider_0/prescaler_0/tspc_1/Z4 0.65fF
+C305 div divider_0/tspc_2/a_630_n680# 0.04fF
+C306 ro_complete_0/cbank_1/switch_1/vin ro_complete_0/cbank_1/switch_0/vin 0.20fF
+C307 divider_0/tspc_0/Z1 divider_0/tspc_0/Z3 0.06fF
+C308 divider_0/nor_0/A divider_0/tspc_0/Z4 0.21fF
+C309 divider_0/prescaler_0/tspc_2/a_740_n680# divider_0/prescaler_0/tspc_2/a_630_n680# 0.19fF
+C310 divider_0/prescaler_0/tspc_2/D divider_0/prescaler_0/tspc_2/Z4 0.11fF
+C311 divider_0/prescaler_0/tspc_2/Z1 divider_0/prescaler_0/tspc_2/Z3 0.06fF
+C312 divider_0/prescaler_0/tspc_1/a_630_n680# divider_0/prescaler_0/tspc_1/Q 0.04fF
+C313 ro_complete_0/a2 vco 0.11fF
+C314 div pd_0/tspc_r_1/Z2 0.19fF
+C315 ro_complete_0/a4 ro_complete_0/cbank_2/switch_4/vin 0.09fF
+C316 divider_0/nor_0/B divider_0/tspc_1/Z3 0.38fF
+C317 divider_0/tspc_0/Q divider_0/tspc_1/Z2 0.14fF
+C318 divider_0/prescaler_0/tspc_2/Q divider_0/and_0/OUT 0.04fF
+C319 divider_0/tspc_0/a_630_n680# divider_0/prescaler_0/Out 0.01fF
+C320 pd_0/tspc_r_1/Qbar1 pd_0/tspc_r_1/Qbar 0.01fF
+C321 pd_0/tspc_r_1/Z3 pd_0/R 0.28fF
+C322 ro_complete_0/cbank_0/switch_3/vin ro_complete_0/cbank_0/switch_4/vin 0.20fF
+C323 divider_0/nor_1/B divider_0/tspc_2/Z1 0.03fF
+C324 divider_0/nor_0/A divider_0/prescaler_0/m1_2700_2190# 0.01fF
+C325 divider_0/prescaler_0/tspc_0/Z4 divider_0/prescaler_0/tspc_0/a_630_n680# 0.12fF
+C326 ro_complete_0/a0 ro_complete_0/cbank_1/v 0.05fF
+C327 divider_0/prescaler_0/m1_2700_2190# divider_0/prescaler_0/tspc_1/Q 0.38fF
+C328 divider_0/prescaler_0/tspc_0/D vco 0.29fF
+C329 pd_0/tspc_r_0/Z3 pd_0/UP 0.03fF
+C330 divider_0/prescaler_0/tspc_0/Z1 divider_0/prescaler_0/tspc_0/Z2 1.07fF
+C331 ro_complete_0/cbank_0/v ro_complete_0/cbank_1/v 0.04fF
+C332 divider_0/nor_0/A divider_0/tspc_1/Z4 0.02fF
+C333 divider_0/prescaler_0/tspc_2/D divider_0/and_0/OUT 0.03fF
+C334 divider_0/prescaler_0/tspc_2/a_630_n680# divider_0/prescaler_0/tspc_2/Q 0.04fF
+C335 divider_0/prescaler_0/tspc_0/Z2 divider_0/prescaler_0/tspc_0/Z4 0.36fF
+C336 divider_0/and_0/OUT divider_0/prescaler_0/nand_1/z1 0.01fF
+C337 divider_0/prescaler_0/tspc_2/Z4 vco 0.12fF
+C338 ro_complete_0/cbank_0/switch_4/vin ro_complete_0/a3 0.13fF
+C339 ro_complete_0/cbank_0/switch_3/vin ro_complete_0/cbank_0/v 1.30fF
+C340 divider_0/prescaler_0/tspc_1/Z3 divider_0/prescaler_0/tspc_1/a_630_n680# 0.05fF
+C341 divider_0/prescaler_0/tspc_0/a_740_n680# vco 0.14fF
+C342 ro_complete_0/cbank_0/switch_5/vin ro_complete_0/a4 0.12fF
+C343 ro_complete_0/cbank_1/switch_4/vin ro_complete_0/cbank_1/switch_5/vin 0.19fF
+C344 ro_complete_0/cbank_1/switch_2/vin ro_complete_0/a2 0.09fF
+C345 divider_0/tspc_0/Z1 divider_0/tspc_0/Z4 0.00fF
+C346 divider_0/nor_0/A divider_0/tspc_0/a_630_n680# 0.35fF
+C347 divider_0/prescaler_0/tspc_2/Z1 divider_0/prescaler_0/tspc_2/Z4 0.00fF
+C348 div pd_0/R 0.51fF
+C349 divider_0/tspc_1/Z1 divider_0/tspc_1/Z3 0.06fF
+C350 divider_0/nor_0/B divider_0/tspc_1/Z4 0.21fF
+C351 pd_0/DOWN pd_0/R 0.36fF
+C352 pd_0/tspc_r_1/Z3 pd_0/tspc_r_1/Z4 0.20fF
+C353 pd_0/tspc_r_1/Z1 pd_0/tspc_r_1/Z2 0.71fF
+C354 divider_0/prescaler_0/tspc_0/Z3 divider_0/prescaler_0/tspc_0/a_630_n680# 0.05fF
+C355 ro_complete_0/cbank_1/switch_3/vin ro_complete_0/cbank_1/switch_2/vin 0.20fF
+C356 divider_0/prescaler_0/m1_2700_2190# divider_0/prescaler_0/tspc_1/Z3 0.33fF
+C357 divider_0/nor_1/B divider_0/tspc_2/Z3 0.38fF
+C358 divider_0/tspc_1/Q divider_0/tspc_2/Z2 0.14fF
+C361 divider_0/and_0/Z1 divider_0/tspc_0/VSUBS 0.74fF
+C362 divider_0/and_0/B divider_0/tspc_0/VSUBS 2.53fF
+C363 divider_0/and_0/A divider_0/tspc_0/VSUBS 2.17fF
+C364 divider_0/and_0/out1 divider_0/tspc_0/VSUBS 2.93fF
+C365 divider_0/tspc_2/a_630_n680# divider_0/tspc_0/VSUBS 1.14fF
+C366 divider_0/tspc_2/Z4 divider_0/tspc_0/VSUBS 0.86fF
+C367 div divider_0/tspc_0/VSUBS 12.46fF
+C368 divider_0/tspc_2/Z3 divider_0/tspc_0/VSUBS 2.26fF
+C369 divider_0/tspc_2/Z2 divider_0/tspc_0/VSUBS 1.46fF
+C370 divider_0/tspc_2/Z1 divider_0/tspc_0/VSUBS 0.99fF
+C371 divider_0/tspc_1/Q divider_0/tspc_0/VSUBS 3.16fF
+C372 divider_0/nor_1/B divider_0/tspc_0/VSUBS 6.02fF
+C373 divider_0/tspc_1/a_630_n680# divider_0/tspc_0/VSUBS 1.15fF
+C374 divider_0/tspc_1/Z4 divider_0/tspc_0/VSUBS 0.86fF
+C375 divider_0/tspc_1/Z3 divider_0/tspc_0/VSUBS 2.26fF
+C376 divider_0/tspc_1/Z2 divider_0/tspc_0/VSUBS 1.45fF
+C377 divider_0/tspc_1/Z1 divider_0/tspc_0/VSUBS 0.99fF
+C378 divider_0/tspc_0/Q divider_0/tspc_0/VSUBS 3.13fF
+C379 divider_0/nor_0/B divider_0/tspc_0/VSUBS 6.85fF
+C380 divider_0/tspc_0/a_630_n680# divider_0/tspc_0/VSUBS 1.14fF
+C381 divider_0/tspc_0/Z4 divider_0/tspc_0/VSUBS 0.86fF
+C382 divider_0/tspc_0/Z3 divider_0/tspc_0/VSUBS 2.26fF
+C383 divider_0/tspc_0/Z2 divider_0/tspc_0/VSUBS 1.46fF
+C384 divider_0/tspc_0/Z1 divider_0/tspc_0/VSUBS 0.99fF
+C385 divider_0/nor_0/A divider_0/tspc_0/VSUBS 6.33fF
+C386 vco divider_0/tspc_0/VSUBS 34.80fF
+C387 divider_0/prescaler_0/Out divider_0/tspc_0/VSUBS 4.53fF
+C388 divider_0/prescaler_0/nand_1/z1 divider_0/tspc_0/VSUBS 0.36fF
+C389 divider_0/and_0/OUT divider_0/tspc_0/VSUBS 5.27fF
+C390 divider_0/prescaler_0/nand_0/z1 divider_0/tspc_0/VSUBS 0.36fF
+C391 divider_0/prescaler_0/tspc_1/Q divider_0/tspc_0/VSUBS 3.10fF
+C392 divider_0/prescaler_0/tspc_2/Q divider_0/tspc_0/VSUBS 3.76fF
+C393 divider_0/prescaler_0/tspc_2/a_630_n680# divider_0/tspc_0/VSUBS 1.14fF
+C394 divider_0/prescaler_0/tspc_2/Z4 divider_0/tspc_0/VSUBS 0.86fF
+C395 divider_0/prescaler_0/tspc_2/Z3 divider_0/tspc_0/VSUBS 2.26fF
+C396 divider_0/prescaler_0/tspc_2/Z2 divider_0/tspc_0/VSUBS 1.46fF
+C397 divider_0/prescaler_0/tspc_2/Z1 divider_0/tspc_0/VSUBS 0.99fF
+C398 divider_0/prescaler_0/tspc_2/D divider_0/tspc_0/VSUBS 3.12fF
+C399 divider_0/prescaler_0/tspc_2/a_740_n680# divider_0/tspc_0/VSUBS 2.11fF
+C400 divider_0/prescaler_0/tspc_1/a_630_n680# divider_0/tspc_0/VSUBS 1.14fF
+C401 divider_0/prescaler_0/tspc_1/Z4 divider_0/tspc_0/VSUBS 0.86fF
+C402 divider_0/prescaler_0/tspc_1/Z3 divider_0/tspc_0/VSUBS 2.26fF
+C403 divider_0/prescaler_0/tspc_1/Z2 divider_0/tspc_0/VSUBS 1.45fF
+C404 divider_0/prescaler_0/tspc_1/Z1 divider_0/tspc_0/VSUBS 0.99fF
+C405 divider_0/prescaler_0/m1_2700_2190# divider_0/tspc_0/VSUBS 4.22fF
+C406 divider_0/prescaler_0/tspc_0/a_630_n680# divider_0/tspc_0/VSUBS 1.16fF
+C407 divider_0/prescaler_0/tspc_0/Z4 divider_0/tspc_0/VSUBS 0.86fF
+C408 divider_0/prescaler_0/tspc_0/Z3 divider_0/tspc_0/VSUBS 2.26fF
+C409 divider_0/prescaler_0/tspc_0/Z2 divider_0/tspc_0/VSUBS 1.46fF
+C410 divider_0/prescaler_0/tspc_0/Z1 divider_0/tspc_0/VSUBS 0.99fF
+C411 divider_0/prescaler_0/tspc_0/D divider_0/tspc_0/VSUBS 2.64fF
+C412 divider_0/prescaler_0/tspc_0/a_740_n680# divider_0/tspc_0/VSUBS 2.11fF
+C413 divider_0/nor_1/Z1 divider_0/tspc_0/VSUBS 1.34fF
+C414 divider_0/mc2 divider_0/tspc_0/VSUBS 4.79fF
+C415 divider_0/nor_0/Z1 divider_0/tspc_0/VSUBS 1.34fF
+C416 ro_complete_0/cbank_2/switch_0/vin divider_0/tspc_0/VSUBS 1.30fF
+C417 ro_complete_0/cbank_2/switch_5/vin divider_0/tspc_0/VSUBS 1.06fF
+C418 ro_complete_0/a5 divider_0/tspc_0/VSUBS 7.35fF
+C419 ro_complete_0/cbank_2/switch_4/vin divider_0/tspc_0/VSUBS 1.16fF
+C420 ro_complete_0/a4 divider_0/tspc_0/VSUBS 6.10fF
+C421 ro_complete_0/cbank_2/switch_2/vin divider_0/tspc_0/VSUBS 0.95fF
+C422 ro_complete_0/a2 divider_0/tspc_0/VSUBS 5.37fF
+C423 ro_complete_0/cbank_2/switch_3/vin divider_0/tspc_0/VSUBS 1.30fF
+C424 ro_complete_0/a3 divider_0/tspc_0/VSUBS 6.08fF
+C425 ro_complete_0/cbank_2/switch_1/vin divider_0/tspc_0/VSUBS 1.53fF
+C426 ro_complete_0/a1 divider_0/tspc_0/VSUBS 6.97fF
+C427 ro_complete_0/a0 divider_0/tspc_0/VSUBS 5.61fF
+C428 ro_complete_0/cbank_1/switch_0/vin divider_0/tspc_0/VSUBS 1.30fF
+C429 ro_complete_0/cbank_1/v divider_0/tspc_0/VSUBS 17.18fF
+C430 ro_complete_0/cbank_1/switch_5/vin divider_0/tspc_0/VSUBS 1.06fF
+C431 ro_complete_0/cbank_1/switch_4/vin divider_0/tspc_0/VSUBS 1.16fF
+C432 ro_complete_0/cbank_1/switch_2/vin divider_0/tspc_0/VSUBS 0.95fF
+C433 ro_complete_0/cbank_1/switch_3/vin divider_0/tspc_0/VSUBS 1.30fF
+C434 ro_complete_0/cbank_1/switch_1/vin divider_0/tspc_0/VSUBS 1.53fF
+C435 ro_complete_0/cbank_0/switch_0/vin divider_0/tspc_0/VSUBS 1.30fF
+C436 ro_complete_0/cbank_0/v divider_0/tspc_0/VSUBS 15.09fF
+C437 ro_complete_0/cbank_0/switch_5/vin divider_0/tspc_0/VSUBS 1.06fF
+C438 ro_complete_0/cbank_0/switch_4/vin divider_0/tspc_0/VSUBS 1.16fF
+C439 ro_complete_0/cbank_0/switch_2/vin divider_0/tspc_0/VSUBS 0.95fF
+C440 ro_complete_0/cbank_0/switch_3/vin divider_0/tspc_0/VSUBS 1.30fF
+C441 ro_complete_0/cbank_0/switch_1/vin divider_0/tspc_0/VSUBS 1.53fF
+C443 filter_0/a_4216_n5230# divider_0/tspc_0/VSUBS 418.90fF
+C444 filter_0/a_4216_n2998# divider_0/tspc_0/VSUBS 1.39fF
+C445 cp_0/a_7110_n2840# divider_0/tspc_0/VSUBS 0.17fF
+C446 cp_0/a_3060_n2840# divider_0/tspc_0/VSUBS 1.71fF
+C447 cp_0/down divider_0/tspc_0/VSUBS 1.54fF
+C448 cp_0/a_7110_0# divider_0/tspc_0/VSUBS 0.17fF
+C449 cp_0/a_6370_0# divider_0/tspc_0/VSUBS 0.40fF
+C450 cp_0/a_3060_0# divider_0/tspc_0/VSUBS 2.49fF
+C451 cp_0/a_1710_0# divider_0/tspc_0/VSUBS 7.47fF
+C452 cp_0/upbar divider_0/tspc_0/VSUBS 1.79fF
+C453 pd_0/and_pd_0/Z1 divider_0/tspc_0/VSUBS 0.39fF
+C454 pd_0/and_pd_0/Out1 divider_0/tspc_0/VSUBS 2.22fF
+C455 pd_0/tspc_r_1/z5 divider_0/tspc_0/VSUBS 1.10fF
+C456 pd_0/tspc_r_1/Z4 divider_0/tspc_0/VSUBS 1.07fF
+C457 pd_0/R divider_0/tspc_0/VSUBS 3.06fF
+C458 pd_0/tspc_r_1/Qbar divider_0/tspc_0/VSUBS 0.79fF
+C459 pd_0/tspc_r_1/Z2 divider_0/tspc_0/VSUBS 1.22fF
+C460 pd_0/tspc_r_1/Z1 divider_0/tspc_0/VSUBS 0.67fF
+C461 pd_0/DOWN divider_0/tspc_0/VSUBS 7.35fF
+C462 pd_0/tspc_r_1/Qbar1 divider_0/tspc_0/VSUBS 1.34fF
+C463 pd_0/tspc_r_1/Z3 divider_0/tspc_0/VSUBS 2.12fF
+C464 pd_0/tspc_r_0/z5 divider_0/tspc_0/VSUBS 1.10fF
+C465 pd_0/tspc_r_0/Z4 divider_0/tspc_0/VSUBS 1.07fF
+C466 pd_0/tspc_r_0/Qbar divider_0/tspc_0/VSUBS 0.88fF
+C467 pd_0/tspc_r_0/Z2 divider_0/tspc_0/VSUBS 1.22fF
+C468 pd_0/tspc_r_0/Z1 divider_0/tspc_0/VSUBS 0.67fF
+C469 pd_0/UP divider_0/tspc_0/VSUBS 5.89fF
+C470 pd_0/tspc_r_0/Qbar1 divider_0/tspc_0/VSUBS 1.34fF
+C471 pd_0/tspc_r_0/Z3 divider_0/tspc_0/VSUBS 2.12fF
+C472 ref divider_0/tspc_0/VSUBS 4.34fF
+
+.tran 0.1n 100n
+
+.control
+set hcopypscolor = 1
+set color0 = white
+set color1 = black
+
+run
+
+plot ref+4 div+2 vco
+hardcopy plots/pll.eps ref+4 div+2 vco
+
+.endc
+.end

@@ -1,0 +1,147 @@
+* SPICE3 file created from pd.ext - technology: sky130A
+
+.lib "/Volumes/Adithya_Ext/Coding_stuff/sky130test/ro/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.param SUPPLY = 1.8
+.global vdd gnd
+
+Vdd vdd gnd 'SUPPLY'
+Vin_ref ref gnd pulse 0 1.8 0 0 0 5.33n 10.66n
+Vin_div div gnd pulse 0 1.8 0 0 0 5n 10n
+
+X0 UP tspc_r_0/Qbar1 gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X1 tspc_r_0/Qbar UP gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X2 tspc_r_0/Z1 vdd vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X3 UP tspc_r_0/Qbar1 vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X4 tspc_r_0/Qbar1 REF tspc_r_0/z5 gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X5 tspc_r_0/z5 tspc_r_0/Z3 gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X6 tspc_r_0/Z3 REF vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X7 tspc_r_0/Z2 REF tspc_r_0/Z1 vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X8 tspc_r_0/Z3 tspc_r_0/Z2 tspc_r_0/Z4 gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X9 tspc_r_0/Z4 REF gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X10 tspc_r_0/Z3 R gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X11 tspc_r_0/Qbar UP vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X12 tspc_r_0/Qbar1 tspc_r_0/Z3 vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X13 tspc_r_0/Z2 vdd gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X14 DOWN tspc_r_1/Qbar1 gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X15 tspc_r_1/Qbar DOWN gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X16 tspc_r_1/Z1 vdd vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X17 DOWN tspc_r_1/Qbar1 vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X18 tspc_r_1/Qbar1 DIV tspc_r_1/z5 gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X19 tspc_r_1/z5 tspc_r_1/Z3 gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X20 tspc_r_1/Z3 DIV vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X21 tspc_r_1/Z2 DIV tspc_r_1/Z1 vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X22 tspc_r_1/Z3 tspc_r_1/Z2 tspc_r_1/Z4 gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X23 tspc_r_1/Z4 DIV gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X24 tspc_r_1/Z3 R gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X25 tspc_r_1/Qbar DOWN vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X26 tspc_r_1/Qbar1 tspc_r_1/Z3 vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X27 tspc_r_1/Z2 vdd gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X28 R and_pd_0/Out1 vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X29 and_pd_0/Out1 UP and_pd_0/Z1 gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X30 and_pd_0/Out1 UP vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X31 and_pd_0/Z1 DOWN gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+X32 and_pd_0/Out1 DOWN vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X33 R and_pd_0/Out1 gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=900000u l=150000u
+C0 tspc_r_0/Z4 tspc_r_0/z5 0.04fF
+C1 tspc_r_0/Qbar1 UP 0.11fF
+C2 REF tspc_r_0/Z4 0.02fF
+C3 tspc_r_1/Z3 DOWN 0.03fF
+C4 R and_pd_0/Z1 0.02fF
+C5 REF R 0.61fF
+C6 tspc_r_0/Z3 tspc_r_0/z5 0.11fF
+C7 tspc_r_1/Z3 tspc_r_1/Z1 0.09fF
+C8 DIV tspc_r_1/Z2 0.19fF
+C9 REF tspc_r_0/Z3 0.65fF
+C10 tspc_r_0/Qbar DOWN 0.02fF
+C11 tspc_r_0/Qbar1 R 0.30fF
+C12 DOWN and_pd_0/Out1 0.12fF
+C13 tspc_r_0/Qbar and_pd_0/Out1 0.05fF
+C14 DIV R 0.51fF
+C15 tspc_r_0/Z3 tspc_r_0/Qbar1 0.38fF
+C16 tspc_r_1/Z4 tspc_r_1/z5 0.04fF
+C17 tspc_r_0/Z2 tspc_r_0/Z4 0.14fF
+C18 tspc_r_1/Qbar1 R 0.01fF
+C19 DIV tspc_r_1/Z4 0.02fF
+C20 DOWN tspc_r_1/Qbar 0.21fF
+C21 REF tspc_r_0/Z1 0.17fF
+C22 tspc_r_0/Z2 R 0.21fF
+C23 DOWN and_pd_0/Z1 0.06fF
+C24 tspc_r_0/Qbar and_pd_0/Z1 0.02fF
+C25 tspc_r_1/Z3 tspc_r_1/z5 0.11fF
+C26 and_pd_0/Out1 and_pd_0/Z1 0.18fF
+C27 R UP 0.45fF
+C28 tspc_r_0/Z3 tspc_r_0/Z2 0.25fF
+C29 DIV tspc_r_1/Z3 0.65fF
+C30 DOWN tspc_r_1/z5 0.03fF
+C31 tspc_r_1/Z2 R 0.21fF
+C32 tspc_r_0/Z3 UP 0.03fF
+C33 tspc_r_0/Qbar1 tspc_r_0/Qbar 0.01fF
+C34 tspc_r_1/Z3 tspc_r_1/Qbar1 0.38fF
+C35 tspc_r_1/Z2 tspc_r_1/Z4 0.14fF
+C36 REF tspc_r_0/z5 0.04fF
+C37 tspc_r_0/Z1 tspc_r_0/Z2 0.71fF
+C38 tspc_r_0/Z3 tspc_r_0/Z4 0.20fF
+C39 tspc_r_0/Z4 tspc_r_1/Z4 0.02fF
+C40 DIV tspc_r_1/Z1 0.17fF
+C41 tspc_r_1/Qbar1 DOWN 0.11fF
+C42 tspc_r_0/Z3 R 0.29fF
+C43 tspc_r_0/Qbar1 tspc_r_0/z5 0.20fF
+C44 tspc_r_0/z5 tspc_r_1/z5 0.02fF
+C45 tspc_r_1/Z3 tspc_r_1/Z2 0.25fF
+C46 DOWN UP 0.46fF
+C47 REF tspc_r_0/Qbar1 0.12fF
+C48 tspc_r_0/Qbar UP 0.21fF
+C49 and_pd_0/Out1 UP 0.33fF
+C50 tspc_r_1/Qbar1 tspc_r_1/Qbar 0.01fF
+C51 tspc_r_1/Z3 R 0.28fF
+C52 DOWN R 0.36fF
+C53 DIV tspc_r_1/z5 0.04fF
+C54 tspc_r_1/Z1 tspc_r_1/Z2 0.71fF
+C55 tspc_r_1/Z3 tspc_r_1/Z4 0.20fF
+C56 tspc_r_0/Z3 tspc_r_0/Z1 0.09fF
+C57 REF tspc_r_0/Z2 0.19fF
+C58 tspc_r_0/Qbar R 0.03fF
+C59 R and_pd_0/Out1 0.33fF
+C60 tspc_r_0/z5 UP 0.03fF
+C61 and_pd_0/Z1 UP 0.06fF
+C62 tspc_r_1/Qbar1 tspc_r_1/z5 0.20fF
+C63 DIV tspc_r_1/Qbar1 0.12fF
+C64 UP gnd 2.21fF
+C65 and_pd_0/Z1 gnd 0.39fF
+C66 and_pd_0/Out1 gnd 2.22fF
+C67 tspc_r_1/z5 gnd 1.10fF
+C68 tspc_r_1/Z4 gnd 1.07fF
+C69 R gnd 3.06fF
+C70 tspc_r_1/Qbar gnd 0.79fF
+C71 tspc_r_1/Z2 gnd 1.22fF
+C72 tspc_r_1/Z1 gnd 0.67fF
+C73 DOWN gnd 3.08fF
+C74 tspc_r_1/Qbar1 gnd 1.34fF
+C75 tspc_r_1/Z3 gnd 2.12fF
+C76 DIV gnd 1.82fF
+C77 tspc_r_0/z5 gnd 1.10fF
+C78 tspc_r_0/Z4 gnd 1.07fF
+C79 tspc_r_0/Qbar gnd 0.88fF
+C80 tspc_r_0/Z2 gnd 1.22fF
+C81 tspc_r_0/Z1 gnd 0.67fF
+C82 tspc_r_0/Qbar1 gnd 1.34fF
+C83 tspc_r_0/Z3 gnd 2.12fF
+C84 REF gnd 1.80fF
+
+.ic v(R) = 0
+.ic v(up) = 0
+.ic v(down) = 0
+.tran 0.1n 100n
+
+.control
+set hcopypscolor = 1
+set color0 = white
+set color1 = black
+
+run
+
+plot up+8 down +6 ref+4 div+2 R
+hardcopy plots/pfd.eps up+8 down +6 ref+4 div+2 R
+
+.endc
+.end

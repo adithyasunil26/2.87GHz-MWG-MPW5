@@ -1,0 +1,377 @@
+* SPICE3 file created from divider.ext - technology: sky130A
+
+.lib "/Volumes/Adithya_Ext/Coding_stuff/sky130test/ro/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.param SUPPLY = 1.8
+.global vdd gnd
+
+Vdd vdd gnd 'SUPPLY'
+Vin_clk clk gnd pulse 0 1.8 0 0 0 1n 2n
+Vin_mc mc2 vdd 0
+
+X0 and_0/A nor_0/B gnd nor_1/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X1 and_0/A nor_0/A gnd nor_1/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X2 nor_0/Z1 nor_0/A vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4.5e+06u l=150000u
+X3 and_0/A nor_0/B nor_0/Z1 vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4.5e+06u l=150000u
+X4 and_0/B nor_1/B gnd nor_1/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X5 and_0/B mc2 gnd nor_1/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X6 nor_1/Z1 mc2 vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4.5e+06u l=150000u
+X7 and_0/B nor_1/B nor_1/Z1 vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4.5e+06u l=150000u
+X8 prescaler_0/tspc_0/Z3 prescaler_0/tspc_0/Z2 prescaler_0/tspc_0/Z4 gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X9 prescaler_0/tspc_0/Z4 clk gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X10 prescaler_0/tspc_0/Z1 prescaler_0/tspc_0/D vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.8e+06u l=150000u
+X11 prescaler_0/tspc_0/Z2 prescaler_0/tspc_0/D gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=450000u l=150000u
+X12 prescaler_0/Out prescaler_0/tspc_0/a_740_n680# vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4e+06u l=150000u
+X13 prescaler_0/tspc_0/a_740_n680# prescaler_0/tspc_0/Z3 vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
+X14 prescaler_0/tspc_0/Z2 clk prescaler_0/tspc_0/Z1 vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.8e+06u l=150000u
+X15 prescaler_0/Out prescaler_0/tspc_0/a_740_n680# gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X16 prescaler_0/tspc_0/a_740_n680# clk prescaler_0/tspc_0/a_630_n680# gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X17 prescaler_0/tspc_0/a_630_n680# prescaler_0/tspc_0/Z3 gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X18 prescaler_0/tspc_0/Z3 clk vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.9e+06u l=150000u
+X19 prescaler_0/tspc_1/Z3 prescaler_0/tspc_1/Z2 prescaler_0/tspc_1/Z4 gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X20 prescaler_0/tspc_1/Z4 clk gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X21 prescaler_0/tspc_1/Z1 prescaler_0/Out vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.8e+06u l=150000u
+X22 prescaler_0/tspc_1/Z2 prescaler_0/Out gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=450000u l=150000u
+X23 prescaler_0/tspc_1/Q prescaler_0/m1_2700_2190# vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4e+06u l=150000u
+X24 prescaler_0/m1_2700_2190# prescaler_0/tspc_1/Z3 vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
+X25 prescaler_0/tspc_1/Z2 clk prescaler_0/tspc_1/Z1 vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.8e+06u l=150000u
+X26 prescaler_0/tspc_1/Q prescaler_0/m1_2700_2190# gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X27 prescaler_0/m1_2700_2190# clk prescaler_0/tspc_1/a_630_n680# gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X28 prescaler_0/tspc_1/a_630_n680# prescaler_0/tspc_1/Z3 gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X29 prescaler_0/tspc_1/Z3 clk vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.9e+06u l=150000u
+X30 prescaler_0/tspc_2/Z3 prescaler_0/tspc_2/Z2 prescaler_0/tspc_2/Z4 gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X31 prescaler_0/tspc_2/Z4 clk gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X32 prescaler_0/tspc_2/Z1 prescaler_0/tspc_2/D vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.8e+06u l=150000u
+X33 prescaler_0/tspc_2/Z2 prescaler_0/tspc_2/D gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=450000u l=150000u
+X34 prescaler_0/tspc_2/Q prescaler_0/tspc_2/a_740_n680# vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4e+06u l=150000u
+X35 prescaler_0/tspc_2/a_740_n680# prescaler_0/tspc_2/Z3 vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
+X36 prescaler_0/tspc_2/Z2 clk prescaler_0/tspc_2/Z1 vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.8e+06u l=150000u
+X37 prescaler_0/tspc_2/Q prescaler_0/tspc_2/a_740_n680# gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X38 prescaler_0/tspc_2/a_740_n680# clk prescaler_0/tspc_2/a_630_n680# gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X39 prescaler_0/tspc_2/a_630_n680# prescaler_0/tspc_2/Z3 gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X40 prescaler_0/tspc_2/Z3 clk vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.9e+06u l=150000u
+X41 prescaler_0/tspc_0/D prescaler_0/tspc_2/Q vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X42 prescaler_0/tspc_0/D prescaler_0/tspc_1/Q vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X43 prescaler_0/nand_0/z1 prescaler_0/tspc_2/Q gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X44 prescaler_0/tspc_0/D prescaler_0/tspc_1/Q prescaler_0/nand_0/z1 gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X45 prescaler_0/tspc_2/D and_0/OUT vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X46 prescaler_0/tspc_2/D prescaler_0/m1_2700_2190# vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X47 prescaler_0/nand_1/z1 and_0/OUT gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X48 prescaler_0/tspc_2/D prescaler_0/m1_2700_2190# prescaler_0/nand_1/z1 gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X49 tspc_0/Z3 tspc_0/Z2 tspc_0/Z4 tspc_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X50 tspc_0/Z4 prescaler_0/Out gnd tspc_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X51 tspc_0/Z1 nor_0/A vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.8e+06u l=150000u
+X52 tspc_0/Z2 nor_0/A gnd tspc_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=450000u l=150000u
+X53 tspc_0/Q nor_0/A vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4e+06u l=150000u
+X54 nor_0/A tspc_0/Z3 vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
+X55 tspc_0/Z2 prescaler_0/Out tspc_0/Z1 vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.8e+06u l=150000u
+X56 tspc_0/Q nor_0/A gnd tspc_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X57 nor_0/A prescaler_0/Out tspc_0/a_630_n680# tspc_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X58 tspc_0/a_630_n680# tspc_0/Z3 gnd tspc_0/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X59 tspc_0/Z3 prescaler_0/Out vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.9e+06u l=150000u
+X60 tspc_1/Z3 tspc_1/Z2 tspc_1/Z4 gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X61 tspc_1/Z4 tspc_0/Q gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X62 tspc_1/Z1 nor_0/B vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.8e+06u l=150000u
+X63 tspc_1/Z2 nor_0/B gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=450000u l=150000u
+X64 tspc_1/Q nor_0/B vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4e+06u l=150000u
+X65 nor_0/B tspc_1/Z3 vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
+X66 tspc_1/Z2 tspc_0/Q tspc_1/Z1 vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.8e+06u l=150000u
+X67 tspc_1/Q nor_0/B gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X68 nor_0/B tspc_0/Q tspc_1/a_630_n680# gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X69 tspc_1/a_630_n680# tspc_1/Z3 gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X70 tspc_1/Z3 tspc_0/Q vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.9e+06u l=150000u
+X71 tspc_2/Z3 tspc_2/Z2 tspc_2/Z4 gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X72 tspc_2/Z4 tspc_1/Q gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+06u l=150000u
+X73 tspc_2/Z1 nor_1/B vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.8e+06u l=150000u
+X74 tspc_2/Z2 nor_1/B gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=450000u l=150000u
+X75 Out nor_1/B vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=4e+06u l=150000u
+X76 nor_1/B tspc_2/Z3 vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
+X77 tspc_2/Z2 tspc_1/Q tspc_2/Z1 vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.8e+06u l=150000u
+X78 Out nor_1/B gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X79 nor_1/B tspc_1/Q tspc_2/a_630_n680# gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X80 tspc_2/a_630_n680# tspc_2/Z3 gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X81 tspc_2/Z3 tspc_1/Q vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.9e+06u l=150000u
+X82 and_0/OUT and_0/out1 vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=3.8e+06u l=150000u
+X83 and_0/Z1 and_0/A gnd nor_1/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X84 and_0/out1 and_0/A vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.6e+06u l=150000u
+X85 and_0/out1 and_0/B and_0/Z1 nor_1/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=2e+06u l=150000u
+X86 and_0/OUT and_0/out1 gnd nor_1/VSUBS sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.5e+06u l=150000u
+X87 and_0/out1 and_0/B vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=2.6e+06u l=150000u
+C0 tspc_1/a_630_n680# nor_1/B 0.00fF
+C1 tspc_1/Q tspc_2/Z2 0.14fF
+C2 prescaler_0/tspc_2/Q prescaler_0/tspc_2/Z3 0.05fF
+C3 prescaler_0/nand_1/z1 prescaler_0/m1_2700_2190# 0.07fF
+C4 prescaler_0/tspc_1/Z2 prescaler_0/tspc_1/Z3 0.16fF
+C5 tspc_0/Z3 tspc_0/a_630_n680# 0.05fF
+C6 prescaler_0/tspc_2/Z1 prescaler_0/tspc_2/Z2 1.07fF
+C7 tspc_1/Z3 tspc_1/Z4 0.65fF
+C8 prescaler_0/m1_2700_2190# nor_0/A 0.01fF
+C9 clk prescaler_0/tspc_1/Z3 0.45fF
+C10 tspc_2/Z1 tspc_2/Z4 0.00fF
+C11 nor_1/B tspc_2/a_630_n680# 0.35fF
+C12 prescaler_0/tspc_2/Q prescaler_0/nand_0/z1 0.01fF
+C13 clk prescaler_0/m1_2700_2190# 0.01fF
+C14 prescaler_0/tspc_0/a_740_n680# prescaler_0/tspc_0/a_630_n680# 0.19fF
+C15 prescaler_0/tspc_0/D prescaler_0/tspc_0/Z4 0.11fF
+C16 prescaler_0/Out tspc_0/Z3 0.45fF
+C17 prescaler_0/tspc_0/Z3 prescaler_0/tspc_0/Z4 0.65fF
+C18 and_0/OUT mc2 0.05fF
+C19 and_0/OUT and_0/Z1 0.04fF
+C20 clk prescaler_0/tspc_2/Z3 0.45fF
+C21 prescaler_0/tspc_1/Z2 prescaler_0/tspc_1/Z4 0.36fF
+C22 tspc_0/Z4 tspc_0/a_630_n680# 0.12fF
+C23 prescaler_0/tspc_2/Z2 prescaler_0/tspc_2/Z3 0.16fF
+C24 tspc_1/Z3 tspc_1/a_630_n680# 0.05fF
+C25 tspc_2/Z3 tspc_2/Z4 0.65fF
+C26 clk prescaler_0/tspc_1/Z4 0.12fF
+C27 nor_1/Z1 and_0/B 0.78fF
+C28 prescaler_0/tspc_0/a_740_n680# prescaler_0/tspc_1/Z2 0.01fF
+C29 nor_0/A tspc_0/Z2 0.23fF
+C30 prescaler_0/Out tspc_0/Z4 0.12fF
+C31 prescaler_0/tspc_0/Z3 prescaler_0/tspc_0/a_630_n680# 0.05fF
+C32 prescaler_0/tspc_2/Q prescaler_0/tspc_0/D 0.04fF
+C33 nor_0/Z1 nor_0/B 0.06fF
+C34 prescaler_0/tspc_1/Q prescaler_0/tspc_0/Z2 0.06fF
+C35 and_0/OUT prescaler_0/tspc_2/D 0.03fF
+C36 prescaler_0/tspc_2/Q prescaler_0/tspc_2/a_630_n680# 0.04fF
+C37 clk prescaler_0/tspc_0/a_740_n680# 0.14fF
+C38 clk prescaler_0/tspc_2/Z4 0.12fF
+C39 prescaler_0/tspc_1/Z2 prescaler_0/tspc_1/a_630_n680# 0.01fF
+C40 nor_0/A tspc_1/Z2 0.15fF
+C41 prescaler_0/tspc_2/Z2 prescaler_0/tspc_2/Z4 0.36fF
+C42 nor_0/A and_0/B 0.08fF
+C43 tspc_1/Z4 tspc_1/a_630_n680# 0.12fF
+C44 tspc_2/Z3 tspc_2/a_630_n680# 0.05fF
+C45 clk prescaler_0/tspc_1/a_630_n680# 0.01fF
+C46 tspc_0/Z1 tspc_0/Z2 1.07fF
+C47 nor_0/A tspc_0/Q 0.55fF
+C48 prescaler_0/Out tspc_0/a_630_n680# 0.01fF
+C49 nor_0/B tspc_1/Z2 0.30fF
+C50 prescaler_0/tspc_0/Z4 prescaler_0/tspc_0/a_630_n680# 0.12fF
+C51 nor_0/B and_0/B 0.31fF
+C52 clk prescaler_0/tspc_0/D 0.29fF
+C53 nor_0/Z1 and_0/A 0.80fF
+C54 clk prescaler_0/tspc_0/Z3 0.64fF
+C55 and_0/out1 and_0/B 0.18fF
+C56 clk prescaler_0/tspc_2/a_630_n680# 0.01fF
+C57 tspc_0/Q nor_0/B 0.22fF
+C58 prescaler_0/tspc_2/Z2 prescaler_0/tspc_2/a_630_n680# 0.01fF
+C59 nor_0/B tspc_2/Z2 0.20fF
+C60 and_0/OUT prescaler_0/m1_2700_2190# 0.14fF
+C61 tspc_2/Z4 tspc_2/a_630_n680# 0.12fF
+C62 nor_1/B and_0/B 0.29fF
+C63 tspc_0/Z2 tspc_0/Z3 0.16fF
+C64 tspc_1/Z1 tspc_1/Z2 1.07fF
+C65 nor_0/B tspc_1/Q 0.51fF
+C66 prescaler_0/Out prescaler_0/tspc_1/Z1 0.08fF
+C67 nor_1/B tspc_2/Z2 0.40fF
+C68 clk prescaler_0/tspc_0/Z4 0.12fF
+C69 and_0/A and_0/B 0.18fF
+C70 prescaler_0/tspc_1/Q prescaler_0/Out 0.91fF
+C71 tspc_0/Q tspc_1/Z1 0.01fF
+C72 prescaler_0/tspc_0/Z1 prescaler_0/tspc_0/Z2 1.07fF
+C73 tspc_1/Q nor_1/B 0.22fF
+C74 tspc_0/Z2 tspc_0/Z4 0.36fF
+C75 tspc_0/Z3 tspc_0/Q 0.05fF
+C76 prescaler_0/tspc_2/D prescaler_0/tspc_2/Z1 0.15fF
+C77 prescaler_0/tspc_2/a_740_n680# prescaler_0/tspc_2/Z3 0.33fF
+C78 tspc_1/Z2 tspc_1/Z3 0.16fF
+C79 tspc_2/Z1 tspc_2/Z2 1.07fF
+C80 nor_1/B Out 0.22fF
+C81 prescaler_0/Out prescaler_0/tspc_1/Z3 0.11fF
+C82 prescaler_0/Out prescaler_0/m1_2700_2190# 0.11fF
+C83 clk prescaler_0/tspc_0/a_630_n680# 0.01fF
+C84 prescaler_0/tspc_2/Q clk 0.05fF
+C85 prescaler_0/tspc_0/D prescaler_0/tspc_0/Z2 0.09fF
+C86 prescaler_0/tspc_0/Z2 prescaler_0/tspc_0/Z3 0.16fF
+C87 tspc_0/Q tspc_1/Z3 0.45fF
+C88 prescaler_0/m1_2700_2190# prescaler_0/tspc_2/D 0.16fF
+C89 and_0/OUT and_0/B 0.01fF
+C90 tspc_1/Q tspc_2/Z1 0.01fF
+C91 prescaler_0/tspc_1/Z1 prescaler_0/tspc_1/Z3 0.06fF
+C92 tspc_0/Z2 tspc_0/a_630_n680# 0.01fF
+C93 prescaler_0/tspc_2/a_740_n680# prescaler_0/tspc_2/Z4 0.08fF
+C94 prescaler_0/tspc_2/D prescaler_0/tspc_2/Z3 0.05fF
+C95 tspc_1/Z2 tspc_1/Z4 0.36fF
+C96 tspc_1/Z3 tspc_1/Q 0.05fF
+C97 prescaler_0/tspc_1/Q prescaler_0/tspc_1/Z3 0.21fF
+C98 nor_1/Z1 nor_0/B 0.18fF
+C99 prescaler_0/tspc_1/Q prescaler_0/m1_2700_2190# 0.38fF
+C100 tspc_2/Z2 tspc_2/Z3 0.16fF
+C101 prescaler_0/Out prescaler_0/tspc_1/Z4 0.28fF
+C102 clk prescaler_0/tspc_1/Z2 0.11fF
+C103 mc2 and_0/B 0.20fF
+C104 and_0/B and_0/Z1 0.07fF
+C105 prescaler_0/Out tspc_0/Z2 0.11fF
+C106 tspc_0/Q tspc_1/Z4 0.15fF
+C107 prescaler_0/tspc_0/Z2 prescaler_0/tspc_0/Z4 0.36fF
+C108 tspc_1/Q tspc_2/Z3 0.45fF
+C109 prescaler_0/Out prescaler_0/tspc_0/a_740_n680# 0.21fF
+C110 nor_1/Z1 nor_1/B 0.06fF
+C111 clk prescaler_0/tspc_2/Z2 0.11fF
+C112 prescaler_0/tspc_1/Z1 prescaler_0/tspc_1/Z4 0.00fF
+C113 mc2 prescaler_0/tspc_2/a_630_n680# 0.33fF
+C114 tspc_0/Q tspc_0/a_630_n680# 0.04fF
+C115 nor_0/A nor_0/B 1.21fF
+C116 prescaler_0/m1_2700_2190# prescaler_0/tspc_1/Z3 0.33fF
+C117 prescaler_0/tspc_2/a_740_n680# prescaler_0/tspc_2/a_630_n680# 0.19fF
+C118 prescaler_0/tspc_2/D prescaler_0/tspc_2/Z4 0.11fF
+C119 prescaler_0/tspc_2/Z1 prescaler_0/tspc_2/Z3 0.06fF
+C120 tspc_1/Z2 tspc_1/a_630_n680# 0.01fF
+C121 prescaler_0/tspc_1/Q prescaler_0/tspc_1/Z4 0.16fF
+C122 tspc_2/Z2 tspc_2/Z4 0.36fF
+C123 tspc_2/Z3 Out 0.05fF
+C124 prescaler_0/tspc_1/Q prescaler_0/nand_0/z1 0.22fF
+C125 nor_0/A tspc_0/Z1 0.03fF
+C126 prescaler_0/tspc_0/Z2 prescaler_0/tspc_0/a_630_n680# 0.01fF
+C127 tspc_0/Q tspc_1/a_630_n680# 0.01fF
+C128 prescaler_0/tspc_1/Q prescaler_0/tspc_0/a_740_n680# 0.15fF
+C129 tspc_1/Q tspc_2/Z4 0.15fF
+C130 prescaler_0/Out prescaler_0/tspc_0/Z3 0.05fF
+C131 prescaler_0/tspc_1/Z3 prescaler_0/tspc_1/Z4 0.65fF
+C132 prescaler_0/m1_2700_2190# prescaler_0/tspc_1/Z4 0.08fF
+C133 prescaler_0/tspc_2/Z1 prescaler_0/tspc_2/Z4 0.00fF
+C134 nor_0/B nor_1/B 0.47fF
+C135 tspc_1/Q tspc_1/a_630_n680# 0.04fF
+C136 prescaler_0/tspc_1/Q prescaler_0/tspc_1/a_630_n680# 0.04fF
+C137 nor_0/A and_0/A 0.01fF
+C138 tspc_2/Z2 tspc_2/a_630_n680# 0.01fF
+C139 prescaler_0/tspc_2/Q and_0/OUT 0.04fF
+C140 nor_0/A tspc_0/Z3 0.38fF
+C141 nor_0/B tspc_1/Z1 0.03fF
+C142 prescaler_0/tspc_1/Q prescaler_0/tspc_0/D 0.32fF
+C143 prescaler_0/tspc_1/Q prescaler_0/tspc_0/Z3 0.13fF
+C144 tspc_1/Q tspc_2/a_630_n680# 0.01fF
+C145 nor_0/B and_0/A 0.26fF
+C146 clk prescaler_0/tspc_0/Z2 0.11fF
+C147 and_0/out1 and_0/A 0.01fF
+C148 and_0/OUT prescaler_0/nand_1/z1 0.01fF
+C149 prescaler_0/tspc_1/Z3 prescaler_0/tspc_1/a_630_n680# 0.05fF
+C150 prescaler_0/m1_2700_2190# prescaler_0/tspc_1/a_630_n680# 0.19fF
+C151 prescaler_0/tspc_2/Z3 prescaler_0/tspc_2/Z4 0.65fF
+C152 and_0/OUT prescaler_0/tspc_1/Z2 0.06fF
+C153 prescaler_0/tspc_2/Q prescaler_0/tspc_2/a_740_n680# 0.20fF
+C154 Out tspc_2/a_630_n680# 0.04fF
+C155 tspc_0/Z1 tspc_0/Z3 0.06fF
+C156 nor_0/A tspc_0/Z4 0.21fF
+C157 prescaler_0/tspc_0/a_740_n680# prescaler_0/tspc_1/Z4 0.01fF
+C158 and_0/OUT clk 0.04fF
+C159 nor_0/B tspc_1/Z3 0.38fF
+C160 prescaler_0/tspc_1/Q prescaler_0/tspc_0/Z4 0.21fF
+C161 nor_1/B tspc_2/Z1 0.03fF
+C162 and_0/OUT prescaler_0/tspc_2/Z2 0.05fF
+C163 nor_0/Z1 and_0/B 0.18fF
+C164 prescaler_0/Out prescaler_0/tspc_0/a_630_n680# 0.04fF
+C165 prescaler_0/tspc_1/Z4 prescaler_0/tspc_1/a_630_n680# 0.12fF
+C166 nor_0/A tspc_1/Z4 0.02fF
+C167 mc2 nor_0/A 0.04fF
+C168 and_0/OUT and_0/out1 0.31fF
+C169 prescaler_0/tspc_2/Z3 prescaler_0/tspc_2/a_630_n680# 0.05fF
+C170 clk prescaler_0/tspc_2/a_740_n680# 0.01fF
+C171 tspc_0/Z1 tspc_0/Z4 0.00fF
+C172 nor_0/A tspc_0/a_630_n680# 0.35fF
+C173 tspc_1/Z1 tspc_1/Z3 0.06fF
+C174 nor_0/B tspc_1/Z4 0.21fF
+C175 prescaler_0/nand_0/z1 prescaler_0/tspc_0/D 0.21fF
+C176 mc2 nor_0/B 0.06fF
+C177 nor_1/B tspc_2/Z3 0.38fF
+C178 prescaler_0/nand_1/z1 prescaler_0/tspc_2/D 0.24fF
+C179 prescaler_0/Out prescaler_0/tspc_1/Z2 0.19fF
+C180 prescaler_0/tspc_2/Q prescaler_0/tspc_1/Q 0.19fF
+C181 mc2 and_0/out1 0.06fF
+C182 and_0/out1 and_0/Z1 0.36fF
+C183 prescaler_0/tspc_0/D prescaler_0/tspc_0/Z1 0.03fF
+C184 prescaler_0/tspc_0/a_740_n680# prescaler_0/tspc_0/Z3 0.33fF
+C185 prescaler_0/Out nor_0/A 0.15fF
+C186 prescaler_0/tspc_0/Z1 prescaler_0/tspc_0/Z3 0.06fF
+C187 tspc_0/a_630_n680# nor_0/B 0.01fF
+C188 tspc_0/Q tspc_1/Z2 0.14fF
+C189 prescaler_0/Out clk 0.51fF
+C190 prescaler_0/tspc_2/Z4 prescaler_0/tspc_2/a_630_n680# 0.12fF
+C191 nor_0/B tspc_2/Z4 0.02fF
+C192 mc2 nor_1/B 0.15fF
+C193 clk prescaler_0/tspc_2/D 0.26fF
+C194 prescaler_0/tspc_1/Z1 prescaler_0/tspc_1/Z2 1.07fF
+C195 tspc_0/Z3 tspc_0/Z4 0.65fF
+C196 prescaler_0/tspc_2/D prescaler_0/tspc_2/Z2 0.09fF
+C197 tspc_1/Z1 tspc_1/Z4 0.00fF
+C198 nor_0/B tspc_1/a_630_n680# 0.35fF
+C199 prescaler_0/tspc_1/Q prescaler_0/tspc_1/Z2 0.06fF
+C200 and_0/OUT prescaler_0/tspc_0/Z2 0.06fF
+C201 tspc_2/Z1 tspc_2/Z3 0.06fF
+C202 nor_1/B tspc_2/Z4 0.22fF
+C203 prescaler_0/tspc_1/Q nor_0/A 0.03fF
+C204 mc2 and_0/A 0.16fF
+C205 prescaler_0/tspc_1/Q clk 0.60fF
+C206 prescaler_0/tspc_0/a_740_n680# prescaler_0/tspc_0/Z4 0.08fF
+C207 prescaler_0/tspc_0/D prescaler_0/tspc_0/Z3 0.05fF
+C208 prescaler_0/tspc_0/Z1 prescaler_0/tspc_0/Z4 0.00fF
+C209 and_0/Z1 gnd 0.74fF
+C210 and_0/B gnd 2.53fF
+C211 and_0/A gnd 2.19fF
+C212 and_0/out1 gnd 2.93fF
+C213 tspc_2/a_630_n680# gnd 1.14fF
+C214 tspc_2/Z4 gnd 0.86fF
+C215 Out gnd 1.60fF
+C216 tspc_2/Z3 gnd 2.26fF
+C217 tspc_2/Z2 gnd 1.45fF
+C218 tspc_2/Z1 gnd 0.99fF
+C219 nor_1/B gnd 5.68fF
+C220 tspc_1/a_630_n680# gnd 1.14fF
+C221 tspc_1/Z4 gnd 0.86fF
+C222 tspc_1/Q gnd 3.14fF
+C223 tspc_1/Z3 gnd 2.26fF
+C224 tspc_1/Z2 gnd 1.45fF
+C225 tspc_1/Z1 gnd 0.99fF
+C226 nor_0/B gnd 6.41fF
+C227 tspc_0/a_630_n680# gnd 1.14fF
+C228 tspc_0/Z4 gnd 0.86fF
+C229 tspc_0/Q gnd 3.13fF
+C230 tspc_0/Z3 gnd 2.26fF
+C231 tspc_0/Z2 gnd 1.46fF
+C232 tspc_0/Z1 gnd 0.99fF
+C233 nor_0/A gnd 6.80fF
+C234 clk gnd 5.63fF
+C235 prescaler_0/Out gnd 4.53fF
+C236 prescaler_0/nand_1/z1 gnd 0.36fF
+C237 and_0/OUT gnd 5.29fF
+C238 prescaler_0/nand_0/z1 gnd 0.36fF
+C239 prescaler_0/tspc_1/Q gnd 3.10fF
+C240 prescaler_0/tspc_2/Q gnd 3.69fF
+C241 prescaler_0/tspc_2/a_630_n680# gnd 1.14fF
+C242 prescaler_0/tspc_2/Z4 gnd 0.86fF
+C243 prescaler_0/tspc_2/Z3 gnd 2.26fF
+C244 prescaler_0/tspc_2/Z2 gnd 1.46fF
+C245 prescaler_0/tspc_2/Z1 gnd 0.99fF
+C246 prescaler_0/tspc_2/D gnd 3.12fF
+C247 prescaler_0/tspc_2/a_740_n680# gnd 2.11fF
+C248 prescaler_0/tspc_1/a_630_n680# gnd 1.14fF
+C249 prescaler_0/tspc_1/Z4 gnd 0.86fF
+C250 prescaler_0/tspc_1/Z3 gnd 2.26fF
+C251 prescaler_0/tspc_1/Z2 gnd 1.45fF
+C252 prescaler_0/tspc_1/Z1 gnd 0.99fF
+C253 prescaler_0/m1_2700_2190# gnd 4.22fF
+C254 prescaler_0/tspc_0/a_630_n680# gnd 1.16fF
+C255 prescaler_0/tspc_0/Z4 gnd 0.86fF
+C256 prescaler_0/tspc_0/Z3 gnd 2.26fF
+C257 prescaler_0/tspc_0/Z2 gnd 1.46fF
+C258 prescaler_0/tspc_0/Z1 gnd 0.99fF
+C259 prescaler_0/tspc_0/D gnd 2.64fF
+C260 prescaler_0/tspc_0/a_740_n680# gnd 2.11fF
+C261 nor_1/Z1 gnd 1.34fF
+C262 mc2 gnd 4.97fF
+C263 nor_0/Z1 gnd 1.34fF
+
+.tran 0.1n 100n
+
+.control
+set hcopypscolor = 1
+set color0 = white
+set color1 = black
+
+run
+
+plot out+2 clk
+hardcopy plots/div.eps out+2 clk
+
+.endc
+.end

@@ -1,0 +1,68 @@
+* SPICE3 file created from cp.ext - technology: sky130A
+
+.lib "/Volumes/Adithya_Ext/Coding_stuff/sky130test/ro/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+
+.global vdd gnd
+Vdd vdd gnd 1.8
+
+Vup up gnd sin(0.9 -0.9 1e7 0 0 0)
+Vdown down gnd sin(0.9 0.9 1e7 0 0 0)
+Vbcp vbias gnd dc 1
+
+.subckt inv out in
+  xm1 out in vdd vdd sky130_fd_pr__pfet_01v8 l=0.3 w=2
+  xm2 out in gnd gnd sky130_fd_pr__nfet_01v8 l=0.3 w=1
+.ends
+
+.subckt cp out up down vbias
+  xinv1 upbar up inv
+  X0 a_7110_n2840# down gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=9e+06u l=1.8e+06u
+  X1 a_7110_0# upbar a_6370_0# vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+07u l=1.8e+06u
+  X2 a_10_n50# vbias gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=9e+06u l=1.8e+06u
+  X3 a_10_n50# a_10_n50# vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+07u l=1.8e+06u
+  X4 a_3060_0# a_1710_n2840# a_1710_n2840# vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+07u l=1.8e+06u
+  X5 vdd gnd a_3060_0# vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+07u l=1.8e+06u
+  X6 a_3060_n2840# a_1710_0# a_1710_0# gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=9e+06u l=1.8e+06u
+  X7 a_1710_n2840# vbias gnd gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=9e+06u l=1.8e+06u
+  X8 gnd out a_3060_n2840# gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=9e+06u l=1.8e+06u
+  X9 a_1710_0# a_10_n50# vdd vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+07u l=1.8e+06u
+  X10 out a_1710_n2840# a_7110_0# vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+07u l=1.8e+06u
+  X11 gnd vdd a_3060_n2840# gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=9e+06u l=1.8e+06u
+  X12 out a_1710_0# a_7110_n2840# gnd sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=9e+06u l=1.8e+06u
+  X13 vdd out a_3060_0# vdd sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.8e+07u l=1.8e+06u
+  C0 a_10_n50# a_1710_0# 0.04fF
+  C1 a_1710_n2840# out 0.61fF
+  C2 out a_1710_0# 0.84fF
+  C3 upbar down 0.02fF
+  C4 a_10_n50# vbias 0.19fF
+  C5 a_1710_0# down 0.32fF
+  C6 upbar a_1710_n2840# 0.29fF
+  C7 a_1710_n2840# a_1710_0# 0.83fF
+  C8 a_7110_n2840# vdd 0.17fF
+  C9 a_3060_n2840# vdd 1.71fF
+  C10 down vdd 1.54fF
+  C11 vbias vdd 2.41fF
+  C12 a_7110_0# vdd 0.17fF
+  C13 a_6370_0# vdd 0.40fF
+  C14 a_3060_0# vdd 1.65fF
+  C15 a_1710_0# vdd 5.76fF
+  C16 out vdd 5.26fF
+  C17 a_1710_n2840# vdd 4.89fF
+  C18 a_10_n50# vdd 2.96fF
+  C19 upbar vdd 1.50fF
+.ends
+
+xcp1 out up down vbias cp
+
+.tran 0.01u 1u
+
+.control
+run
+
+  set hcopypscolor = 1
+  set color0=white
+  set color1=black
+  hardcopy plots/cp.eps v(up) v(down) v(vbias) v(out)
+
+.endc
+.end

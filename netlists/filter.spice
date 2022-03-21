@@ -1,0 +1,15 @@
+* SPICE3 file created from filter.ext - technology: sky130A
+
+X0 v a_4216_n2998# gnd sky130_fd_pr__res_xhigh_po w=350000u l=9e+06u
+X1 a_4216_n5230# gnd sky130_fd_pr__cap_mim_m3_1 l=3e+07u w=3e+07u
+X2 a_4216_n5230# gnd sky130_fd_pr__cap_mim_m3_1 l=3e+07u w=3e+07u
+X3 v gnd sky130_fd_pr__cap_mim_m3_1 l=3e+07u w=3e+07u
+X4 a_4216_n5230# a_4216_n2998# gnd sky130_fd_pr__res_xhigh_po w=350000u l=9e+06u
+X5 a_4216_n5230# gnd sky130_fd_pr__cap_mim_m3_1 l=3e+07u w=3e+07u
+X6 a_4216_n5230# gnd sky130_fd_pr__cap_mim_m3_1 l=3e+07u w=3e+07u
+X7 a_4216_n5230# gnd sky130_fd_pr__cap_mim_m3_1 l=3e+07u w=3e+07u
+C0 v a_4216_n2998# 0.31fF
+C1 a_4216_n5230# v 0.19fF
+C2 v gnd 85.69fF
+C3 a_4216_n5230# gnd 418.47fF
+C4 a_4216_n2998# gnd 1.03fF
