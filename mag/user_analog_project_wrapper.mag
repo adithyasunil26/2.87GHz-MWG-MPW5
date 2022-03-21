@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1647879069
+timestamp 1647880391
 << psubdiff >>
 rect 83392 340047 84757 340157
 rect 83392 338865 83511 340047
@@ -8387,38 +8387,42 @@ rect -50 352000 292050 352050
 rect -50 0 0 352000
 rect 292000 0 292050 352000
 rect -50 -50 292050 0
-use pll_full_buffered1  pll_full_buffered1_1
-timestamp 1647879069
-transform 1 0 11977 0 1 315152
-box -1061 0 44159 15955
-use divider_buffered  divider_buffered_0
-timestamp 1647866572
-transform 1 0 214902 0 1 126196
-box -746 -1568 44148 5163
-use div_pd_buffered  div_pd_buffered_0
-timestamp 1647861335
-transform 1 0 11556 0 1 170913
-box -947 -3226 44148 7340
-use ro_complete_buffered  ro_complete_buffered_0
-timestamp 1647861335
-transform 1 0 237047 0 1 315756
-box -2962 -10858 43775 10272
-use ro_divider_buffered  ro_divider_buffered_0
-timestamp 1647865947
-transform 1 0 235839 0 1 234053
-box -2972 -10858 43775 12276
-use cp_buffered  cp_buffered_0
-timestamp 1647878778
-transform 1 0 13561 0 1 262981
-box -1398 -3598 44144 5452
-use filter_buffered  filter_buffered_0
-timestamp 1647861083
-transform 1 0 23052 0 1 29678
-box -1 0 44805 14450
+use pll_full  pll_full_0
+timestamp 1647877853
+transform 1 0 205735 0 1 27951
+box -5794 -555 13278 10840
 use pll_full_buffered2  pll_full_buffered2_0
 timestamp 1647878913
 transform 1 0 15639 0 1 87306
 box -1629 0 44161 20437
+use filter_buffered  filter_buffered_0
+timestamp 1647861083
+transform 1 0 23052 0 1 29678
+box -1 0 44805 14450
+use cp_buffered  cp_buffered_0
+timestamp 1647878778
+transform 1 0 13561 0 1 262981
+box -1398 -3598 44144 5452
+use ro_divider_buffered  ro_divider_buffered_0
+timestamp 1647865947
+transform 1 0 235839 0 1 234053
+box -2972 -10858 43775 12276
+use ro_complete_buffered  ro_complete_buffered_0
+timestamp 1647861335
+transform 1 0 237047 0 1 315756
+box -2962 -10858 43775 10272
+use div_pd_buffered  div_pd_buffered_0
+timestamp 1647861335
+transform 1 0 11556 0 1 170913
+box -947 -3226 44148 7340
+use divider_buffered  divider_buffered_0
+timestamp 1647866572
+transform 1 0 214902 0 1 126196
+box -746 -1568 44148 5163
+use pll_full_buffered1  pll_full_buffered1_1
+timestamp 1647879069
+transform 1 0 11977 0 1 315152
+box -1061 0 44159 15955
 << labels >>
 flabel metal3 s 291760 134615 292400 134671 0 FreeSans 560 0 0 0 gpio_analog[0]
 port 0 nsew signal bidirectional
