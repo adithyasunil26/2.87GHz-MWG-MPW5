@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1647816385
+timestamp 1647859779
 << locali >>
 rect -458 708 70 709
 rect -470 698 70 708
@@ -11,23 +11,21 @@ rect -470 584 -339 585
 << viali >>
 rect -458 594 -351 698
 << metal1 >>
-rect 2067 1141 2142 1146
+rect 2067 1141 2142 1142
 rect 1676 1116 2142 1141
-rect 1719 998 1745 999
-rect 1666 979 1745 998
+rect 1666 981 1768 997
 rect -470 698 -339 708
 rect -470 594 -458 698
 rect -351 594 -339 698
-rect 1719 655 1745 979
+rect 1683 622 1768 981
 rect -470 584 -339 594
-rect 1688 61 1760 655
-rect 1685 -94 1765 61
+rect 1684 57 1765 622
+rect 1685 -94 1765 57
 rect 2067 7 2142 1116
 rect -520 -100 1765 -94
 rect -525 -169 1765 -100
 rect 2065 -161 2145 7
-rect -525 -172 1757 -169
-rect -525 -188 32 -172
+rect -525 -188 1762 -169
 rect -525 -2214 -380 -188
 rect -60 -316 29 -314
 rect 2062 -316 2151 -161
@@ -109,37 +107,40 @@ rect -91 2196 22 2210
 rect -91 2099 -81 2196
 rect 13 2099 22 2196
 rect -91 2085 22 2099
+rect 4178 1401 4456 1818
+rect 1681 1257 4456 1401
 rect -924 698 -329 713
 rect -924 594 -458 698
 rect -351 594 -329 698
 rect -924 577 -329 594
 rect -924 -959 -768 577
+rect 4178 -594 4456 1257
 rect -924 -1134 329 -959
 rect -924 -2445 -768 -1134
 rect -947 -2620 293 -2445
 << metal5 >>
 rect 186 2938 404 3236
 rect 145 -1983 363 -1667
-use tapered_buf  tapered_buf_3
-timestamp 1647815768
-transform 1 0 429 0 1 -2346
-box -470 -910 43675 404
-use tapered_buf  tapered_buf_1
-timestamp 1647815768
-transform 1 0 473 0 1 4052
-box -470 -910 43675 404
-use tapered_buf  tapered_buf_2
-timestamp 1647815768
-transform 1 0 434 0 1 -881
-box -470 -910 43675 404
-use tapered_buf  tapered_buf_0
-timestamp 1647815768
-transform 1 0 468 0 1 2605
-box -470 -910 43675 404
 use pd  pd_0
-timestamp 1647816385
+timestamp 1647859779
 transform 1 0 215 0 1 781
 box -215 -855 1685 810
+use tapered_buf  tapered_buf_3
+timestamp 1647818295
+transform 1 0 429 0 1 -2346
+box -470 -910 43675 401
+use tapered_buf  tapered_buf_1
+timestamp 1647818295
+transform 1 0 473 0 1 4052
+box -470 -910 43675 401
+use tapered_buf  tapered_buf_2
+timestamp 1647818295
+transform 1 0 434 0 1 -881
+box -470 -910 43675 401
+use tapered_buf  tapered_buf_0
+timestamp 1647818295
+transform 1 0 468 0 1 2605
+box -470 -910 43675 401
 << labels >>
 rlabel space 48 2642 48 2642 1 ref
 rlabel space 40 -1345 40 -1345 1 up
