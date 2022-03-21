@@ -2739,21 +2739,18 @@ C2609 pll_full_1/divider_0/tspc_2/Z3 vssa1 2.26fF
 C2610 pll_full_1/divider_0/tspc_2/Z2 vssa1 1.46fF
 C2611 pll_full_1/divider_0/tspc_2/Z1 vssa1 0.99fF
 C2612 pll_full_1/divider_0/nor_0/B vssa1 6.48fF
-C2613 pll_full_1/divider_0/tspc_2/a_630_n680# vssa1 1.14fF **FLOATING
 C2614 pll_full_1/divider_0/tspc_1/Z4 vssa1 0.86fF
 C2615 pll_full_1/divider_0/tspc_1/Q vssa1 3.12fF
 C2616 pll_full_1/divider_0/tspc_1/Z3 vssa1 2.26fF
 C2617 pll_full_1/divider_0/tspc_1/Z2 vssa1 1.46fF
 C2618 pll_full_1/divider_0/tspc_1/Z1 vssa1 0.99fF
 C2619 pll_full_1/divider_0/nor_1/B vssa1 7.12fF
-C2620 pll_full_1/divider_0/tspc_1/a_630_n680# vssa1 1.15fF **FLOATING
 C2621 pll_full_1/divider_0/tspc_0/Z4 vssa1 0.86fF
 C2622 pll_full_1/divider_0/tspc_0/Q vssa1 3.14fF
 C2623 pll_full_1/divider_0/tspc_0/Z3 vssa1 2.26fF
 C2624 pll_full_1/divider_0/tspc_0/Z2 vssa1 1.46fF
 C2625 pll_full_1/divider_0/tspc_0/Z1 vssa1 0.99fF
 C2626 pll_full_1/divider_0/nor_1/A vssa1 7.08fF
-C2627 pll_full_1/divider_0/tspc_0/a_630_n680# vssa1 1.15fF **FLOATING
 C2628 pll_full_1/vco vssa1 35.22fF
 C2629 pll_full_1/divider_0/prescaler_0/nand_1/z1 vssa1 0.36fF
 C2630 pll_full_1/divider_0/prescaler_0/tspc_0/D vssa1 2.64fF
@@ -3347,23 +3344,7 @@ C3217 cp_buffered_0/tapered_buf_2/a_1650_0# vssa1 63.61fF **FLOATING
 C3218 cp_buffered_0/tapered_buf_2/a_580_0# vssa1 16.76fF **FLOATING
 C3219 cp_buffered_0/tapered_buf_2/a_160_n140# vssa1 4.09fF **FLOATING
 C3220 pd_buffered_0/tapered_buf_0/in vssa1 1.13fF
-C3221 pd_buffered_0/tapered_buf_0/a_n10_n140# vssa1 0.06fF **FLOATING
-C3222 pd_buffered_0/tapered_buf_0/a_210_n610# vssa1 592.97fF **FLOATING
-C3223 pd_buffered_0/tapered_buf_0/a_160_230# vssa1 0.15fF **FLOATING
-C3224 pd_buffered_0/tapered_buf_0/a_n10_230# vssa1 0.13fF **FLOATING
-C3225 pd_buffered_0/tapered_buf_0/a_4670_0# vssa1 252.41fF **FLOATING
-C3226 pd_buffered_0/tapered_buf_0/a_1650_0# vssa1 63.61fF **FLOATING
-C3227 pd_buffered_0/tapered_buf_0/a_580_0# vssa1 16.76fF **FLOATING
-C3228 pd_buffered_0/tapered_buf_0/a_160_n140# vssa1 4.09fF **FLOATING
 C3229 pd_buffered_0/tapered_buf_1/out vssa1 385.91fF
-C3230 pd_buffered_0/tapered_buf_1/a_n10_n140# vssa1 0.06fF **FLOATING
-C3231 pd_buffered_0/tapered_buf_1/a_210_n610# vssa1 592.97fF **FLOATING
-C3232 pd_buffered_0/tapered_buf_1/a_160_230# vssa1 0.15fF **FLOATING
-C3233 pd_buffered_0/tapered_buf_1/a_n10_230# vssa1 0.13fF **FLOATING
-C3234 pd_buffered_0/tapered_buf_1/a_4670_0# vssa1 252.41fF **FLOATING
-C3235 pd_buffered_0/tapered_buf_1/a_1650_0# vssa1 63.61fF **FLOATING
-C3236 pd_buffered_0/tapered_buf_1/a_580_0# vssa1 16.76fF **FLOATING
-C3237 pd_buffered_0/tapered_buf_1/a_160_n140# vssa1 4.09fF **FLOATING
 C3238 pd_buffered_0/pd_0/UP vssa1 5.51fF
 C3239 pd_buffered_0/pd_0/and_pd_0/Z1 vssa1 0.39fF
 C3240 pd_buffered_0/pd_0/and_pd_0/Out1 vssa1 2.22fF
@@ -3386,21 +3367,5 @@ C3256 pd_buffered_0/pd_0/tspc_r_0/Qbar1 vssa1 1.34fF
 C3257 pd_buffered_0/pd_0/tspc_r_0/Z3 vssa1 2.12fF
 C3258 pd_buffered_0/pd_0/REF vssa1 388.56fF
 C3259 pd_buffered_0/tapered_buf_3/out vssa1 385.93fF
-C3260 pd_buffered_0/tapered_buf_3/a_n10_n140# vssa1 0.06fF **FLOATING
-C3261 pd_buffered_0/tapered_buf_3/a_210_n610# vssa1 592.97fF **FLOATING
-C3262 pd_buffered_0/tapered_buf_3/a_160_230# vssa1 0.15fF **FLOATING
-C3263 pd_buffered_0/tapered_buf_3/a_n10_230# vssa1 0.13fF **FLOATING
-C3264 pd_buffered_0/tapered_buf_3/a_4670_0# vssa1 252.41fF **FLOATING
-C3265 pd_buffered_0/tapered_buf_3/a_1650_0# vssa1 63.61fF **FLOATING
-C3266 pd_buffered_0/tapered_buf_3/a_580_0# vssa1 16.76fF **FLOATING
-C3267 pd_buffered_0/tapered_buf_3/a_160_n140# vssa1 4.09fF **FLOATING
 C3268 pd_buffered_0/tapered_buf_2/in vssa1 1.13fF
-C3269 pd_buffered_0/tapered_buf_2/a_n10_n140# vssa1 0.06fF **FLOATING
-C3270 pd_buffered_0/tapered_buf_2/a_210_n610# vssa1 592.97fF **FLOATING
-C3271 pd_buffered_0/tapered_buf_2/a_160_230# vssa1 0.15fF **FLOATING
-C3272 pd_buffered_0/tapered_buf_2/a_n10_230# vssa1 0.13fF **FLOATING
-C3273 pd_buffered_0/tapered_buf_2/a_4670_0# vssa1 252.41fF **FLOATING
-C3274 pd_buffered_0/tapered_buf_2/a_1650_0# vssa1 63.61fF **FLOATING
-C3275 pd_buffered_0/tapered_buf_2/a_580_0# vssa1 16.76fF **FLOATING
-C3276 pd_buffered_0/tapered_buf_2/a_160_n140# vssa1 4.09fF **FLOATING
 .ends
