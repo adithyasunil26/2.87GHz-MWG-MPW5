@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1647877853
+timestamp 1647882973
 << nwell >>
 rect -3185 7805 -3090 9815
 rect -3290 7585 -2985 7805
@@ -24,7 +24,6 @@ rect -3205 7755 -3070 7765
 rect -3205 7645 -3195 7755
 rect -3080 7645 -3070 7755
 rect -3205 7640 -3070 7645
-rect -1481 7592 -1379 7695
 rect 7885 6690 8744 6954
 rect -1492 6376 -1368 6388
 rect -5053 5917 -4915 6349
@@ -283,30 +282,30 @@ rect -4675 3765 -4670 3805
 rect -4630 3765 -4625 3805
 rect -4675 3760 -4625 3765
 rect -5791 3090 -4643 3260
-use ro_complete  ro_complete_0
-timestamp 1647877853
-transform 1 0 8617 0 1 8475
-box -348 -5690 4661 1440
 use pd  pd_0
-timestamp 1647877853
+timestamp 1647882973
 transform 1 0 -4845 0 1 5180
 box -215 -855 1685 810
-use inverter  inverter_0
-timestamp 1647877520
-transform 1 0 -2894 0 1 4593
-box 75 -311 310 557
-use cp  cp_0
-timestamp 1640911461
-transform 1 0 -4895 0 1 7840
-box -415 -1715 4690 2035
-use filter  filter_0
-timestamp 1640983258
-transform 1 0 1810 0 1 10450
-box -1800 -11005 6240 390
 use divider  divider_0
 timestamp 1647769399
 transform 1 0 -4910 0 1 1985
 box -490 -235 4690 2150
+use filter  filter_0
+timestamp 1640983258
+transform 1 0 1810 0 1 10450
+box -1800 -11005 6240 390
+use cp  cp_0
+timestamp 1640911461
+transform 1 0 -4895 0 1 7840
+box -415 -1715 4690 2035
+use inverter  inverter_0
+timestamp 1647877520
+transform 1 0 -2894 0 1 4593
+box 75 -311 310 557
+use ro_complete  ro_complete_0
+timestamp 1647877853
+transform 1 0 8617 0 1 8475
+box -348 -5690 4661 1440
 << labels >>
 rlabel locali -3140 7755 -3140 7755 1 vdd!
 rlabel metal4 -3755 9794 -3755 9795 1 vdd!

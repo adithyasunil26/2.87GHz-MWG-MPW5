@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1647859779
+timestamp 1647883824
 << locali >>
 rect -458 708 70 709
 rect -470 698 70 708
@@ -122,28 +122,30 @@ rect -947 -2620 293 -2445
 rect 186 2938 404 3236
 rect 145 -1983 363 -1667
 use pd  pd_0
-timestamp 1647859779
+timestamp 1647883824
 transform 1 0 215 0 1 781
 box -215 -855 1685 810
-use tapered_buf  tapered_buf_3
+use tapered_buf  tapered_buf_0
 timestamp 1647818295
-transform 1 0 429 0 1 -2346
-box -470 -910 43675 401
-use tapered_buf  tapered_buf_1
-timestamp 1647818295
-transform 1 0 473 0 1 4052
+transform 1 0 468 0 1 2605
 box -470 -910 43675 401
 use tapered_buf  tapered_buf_2
 timestamp 1647818295
 transform 1 0 434 0 1 -881
 box -470 -910 43675 401
-use tapered_buf  tapered_buf_0
+use tapered_buf  tapered_buf_1
 timestamp 1647818295
-transform 1 0 468 0 1 2605
+transform 1 0 473 0 1 4052
+box -470 -910 43675 401
+use tapered_buf  tapered_buf_3
+timestamp 1647818295
+transform 1 0 429 0 1 -2346
 box -470 -910 43675 401
 << labels >>
 rlabel space 48 2642 48 2642 1 ref
 rlabel space 40 -1345 40 -1345 1 up
 rlabel space 64 4082 64 4082 1 div
 rlabel space -14 -2804 -14 -2804 1 down
+rlabel metal4 4348 686 4348 686 1 vdd!
+rlabel metal4 -852 -1043 -852 -1043 1 gnd!
 << end >>
